@@ -5,57 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Now - Ghorepani: Poon Hill Trek</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    main {
-      padding: 2rem;
-      max-width: 700px;
-      margin: auto;
-      background-color: rgba(255, 255, 255, 0.95);
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 1rem;
-      font-size: 2.5rem;
-    }
-
-    form label {
-      font-weight: bold;
-      display: block;
-      margin-top: 1rem;
-      font-size: 1.1rem;
-    }
-
-    form input, form textarea {
-      width: 100%;
-      padding: 0.8rem;
-      margin-top: 0.3rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 1rem;
-    }
-
-    button {
-      margin-top: 1.5rem;
-      width: 100%;
-      padding: 1rem;
-      background-color: #28a745;
-      color: white;
-      border: none;
-      font-size: 1.2rem;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #218838;
-    }
-  </style>
 </head>
 <body>
 
+  <!-- Header -->
   <header>
     <div class="logo">
       <a href="index.html"><img src="images/logo.jpg" alt="Pahad Voyage Nepal Logo" /></a>
@@ -70,10 +23,12 @@
       </ul>
     </nav>
   </header>
-  <main>
+
+  <!-- Booking Form -->
+  <main class="booking-container">
     <h1>Book Ghorepani: Poon Hill Trek</h1>
 
-    <form action="booking-success.html" method="get">
+    <form action="booking-success.html" method="get" class="booking-form">
       <label for="fullname">Full Name</label>
       <input type="text" id="fullname" name="fullname" required />
 
@@ -93,15 +48,16 @@
       <input type="text" id="nationality" name="nationality" required />
 
       <label for="notes">Additional Notes</label>
-      <textarea id="notes" name="notes" rows="4" placeholder="Food preference, medical info, etc."></textarea>
+      <textarea id="notes" name="notes" rows="4"></textarea>
 
       <button type="submit">Submit Booking</button>
     </form>
   </main>
+
+  <!-- Footer -->
   <footer>
     <p>&copy; 2024 Pahad Voyage Nepal. All Rights Reserved.</p>
   </footer>
 
 </body>
 </html>
-
