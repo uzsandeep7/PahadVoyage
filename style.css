@@ -445,9 +445,9 @@ main {
     padding: 60px 15%;
 }
 
-.about h2 {
+.about h3{
     font-family: "Dongle-bold";
-    font-size: 2.rem;
+    font-size: 2.5rem;
     color: #333;
     margin-bottom: 20px;
 }
@@ -456,7 +456,7 @@ main {
     font-family: "Dongle-regular";
     font-size: 1.rem;
     line-height: 1.6;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
 }
 
 
@@ -466,15 +466,15 @@ section {
 
 section h2 {
     font-family: "Dongle-bold";
-    font-size: 1.8rem;
-    margin-top: 20px;
+    font-size: 2.0rem;
+    margin-top: 30px;
 }
 
 section p {
     font-family: "Dongle-regular";
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 
