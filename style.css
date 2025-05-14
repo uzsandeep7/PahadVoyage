@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -62,7 +63,7 @@ body {
 .nav-menu a {
     text-decoration: none;
     font-family: "Dongle-bold";
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #fff;
     padding: 8px 12px;
     transition: background 0.3s, color 0.3s;
@@ -85,19 +86,10 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     height: 100vh;
     object-fit: cover;
     z-index: -1;
 }
-
-@media (max-width: 480px) {
-    .home-image img {
-        height: 100vh;
-        object-fit: cover;
-    }
-}
-
 
 .home-content {
     position: absolute;
@@ -110,12 +102,12 @@ body {
 
 .home-content h1 {
     font-family: "Dongle-bold";
-    font-size: 4vw;
+    font-size: 5vw;
 }
 
 .home-content p {
     font-family: "Dongle-regular";
-    font-size: 2vw;
+    font-size: 2.2vw;
     margin-top: -20px;
     margin-bottom: 10px;
 }
@@ -128,7 +120,7 @@ body {
     padding: 12px 30px;
     border-radius: 50px;
     font-family: "Dongle-light";
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     transition: all ease 0.3s;
 }
 
@@ -138,13 +130,13 @@ body {
 
 #packages h3 {
     font-family: "Dongle-Bold";
-    font-size: 2.5rem;
+    font-size: 3rem;
     text-align: center;
     margin: 20px 0;
 }
 
 .destinations {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-family: "Dongle-bold";
     margin: 40px 80px;
     text-align: center;
@@ -163,18 +155,6 @@ body {
     margin-top: 30px;
 }
 
-@media (max-width: 768px) {
-    .destination-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    .destination-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .destination-item {
     display: inline-block;
     text-decoration: none;
@@ -183,7 +163,7 @@ body {
     padding: 12px 30px;
     border-radius: 50px;
     font-family: "Dongle-light";
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     transition: all ease 0.3s;
 }
 
@@ -212,7 +192,7 @@ body {
 
 .destination-item p {
     font-family: "Dongle-regular";
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: #666;
     margin: 0 10px;
     line-height: 1.4;
@@ -221,7 +201,7 @@ body {
 
 .destination-item .package-price {
     font-family: "Dongle-bold";
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     color: #333;
     position: absolute;
     bottom: 20px;
@@ -245,7 +225,7 @@ body {
     padding: 10px 20px;
     border-radius: 25px;
     font-family: "Dongle-light";
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-top: 15px;
     transition: all 0.3s ease;
 }
@@ -255,7 +235,7 @@ body {
 }
 
 .trek-title {
-    font-size: 2rem;
+    font-size: 2.2rem;
     font-weight: bold;
     color: #333;
     text-align: center;
@@ -312,73 +292,6 @@ body {
     transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-    .gallery-item {
-        width: 48%;
-    }
-
-    .destination-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        padding: 0 5%;
-    }
-
-    .home-content h1 {
-        font-size: calc(3rem + 2vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.6rem + 1vw);
-    }
-
-    .home-button {
-        padding: 10px 25px;
-        font-size: 1.4rem;
-    }
-
-    .destinations {
-        margin: 40px 20px;
-    }
-
-    .destination-item img {
-        height: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-    }
-
-    .home-button {
-        font-size: 1.2rem;
-    }
-
-    .home-content h1 {
-        font-size: calc(2.5rem + 3vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.4rem + 1vw);
-    }
-
-    .destination-item img {
-        height: 180px;
-    }
-
-    .team-member img {
-        width: 100%;
-        height: auto;
-    }
-
-    .about h3 {
-        font-size: 3rem;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-    }
-}
-
 .about {
     text-align: center;
     padding: 100px;
@@ -386,12 +299,12 @@ body {
 
 .about h3 {
     font-family: "Dongle-bold";
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 .about p {
     font-family: "Dongle-regular";
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1;
     margin-bottom: 40px;
 }
@@ -411,7 +324,7 @@ body {
 
 .team-member h4 {
     font-family: "Dongle-bold";
-    font-size: 2rem;
+    font-size: 2.2rem;
 }
 
 .contact {
@@ -425,7 +338,7 @@ body {
 
 .contact h3 {
     font-family: "Dongle-bold";
-    font-size: 3rem;
+    font-size: 3.2rem;
     color: #000;
 }
 
@@ -444,7 +357,7 @@ textarea {
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: "Dongle-regular";
     box-sizing: border-box;
 }
@@ -461,7 +374,7 @@ textarea {
     padding: 10px 30px;
     border-radius: 50px;
     font-family: "Dongle-light";
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     border: none;
     transition: all ease 0.3s;
     margin-top: 20px;
@@ -484,13 +397,74 @@ footer {
 
 footer p {
     font-family: "Dongle-regular";
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 @media (max-width: 768px) {
     input,
     textarea {
         width: 100%;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding: 0 5%;
+    }
+
+    .home-content h1 {
+        font-size: calc(3rem + 2vw);
+    }
+
+    .home-content p {
+        font-size: calc(1.6rem + 1vw);
+    }
+
+    .home-button {
+        padding: 10px 25px;
+        font-size: 1.6rem;
+    }
+
+    .destinations {
+        margin: 40px 20px;
+    }
+
+    .destination-item img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+
+    .home-button {
+        font-size: 1.4rem;
+    }
+
+    .home-content h1 {
+        font-size: calc(2.5rem + 3vw);
+    }
+
+    .home-content p {
+        font-size: calc(1.4rem + 1vw);
+    }
+
+    .destination-item img {
+        height: 180px;
+    }
+
+    .team-member img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about h3 {
+        font-size: 2.8rem;
+    }
+
+    .about p {
+        font-size: 1.4rem;
     }
 }
 
@@ -502,8 +476,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-
 
 #booking {
     padding: 80px 20px;
@@ -523,7 +495,7 @@ body {
 
 .booking-form label {
     font-family: "Dongle-regular";
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     text-align: left;
     display: block;
     margin-bottom: 5px;
@@ -535,7 +507,7 @@ body {
     width: 100%;
     margin: 10px 0;
     padding: 12px;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-family: "Dongle-regular";
     border-radius: 5px;
     border: 1px solid #ddd;
@@ -545,7 +517,7 @@ body {
     background-color: #ff7f50;
     color: #fff;
     font-family: "Dongle-light";
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 12px 30px;
     border-radius: 25px;
     border: none;
@@ -555,12 +527,4 @@ body {
 
 .booking-form button:hover {
     background-color: #333;
-}
-
-body {
-    background-color: #f0f8ff; 
-    background-image: url('images/back.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
