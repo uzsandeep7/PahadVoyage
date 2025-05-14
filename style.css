@@ -263,6 +263,15 @@ body {
     margin-bottom: 15px;
 }
 
+.trek-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
 .trek-package-img {
     width: 100%;
     max-width: 800px;
@@ -324,15 +333,6 @@ body {
 .book-button:hover {
   background: #333;
 }
-#package-details {
-  padding: 50px 8%;
-  background: transparent; 
-  border-radius: 12px;
-  font-family: "Dongle", sans-serif;
-  color: #333;
-  max-width: 1000px;
-  margin: 40px auto;
-}
 
 @media (max-width: 768px) {
   #package-details {
@@ -343,7 +343,6 @@ body {
   #package-details h3 {
     font-size: 1.8rem;
   }
-}
 
   .book-button {
     font-size: 1.4rem;
