@@ -31,7 +31,7 @@ header {
 
 body {
     background-color: #f0f8ff;
-    background-image: url('images/Back.jpeg');
+    background-image: url('images/back.jpeg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
@@ -728,9 +728,4 @@ footer {
   margin-top: 50px;
 }
 
-body {
-  background: url('images/back.jpeg') no-repeat center center fixed;
-  background-size: cover;
-  font-family: 'Dongle', sans-serif;
-}
 
