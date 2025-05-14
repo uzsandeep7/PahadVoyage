@@ -1,559 +1,566 @@
 * {
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  }
-
-@font-face {
-font-family: "Dongle-light";
-src: url("Dongle/Dongle-Light.ttf");
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
 @font-face {
-font-family: "Dongle-regular";
-src: url("Dongle/Dongle-Regular.ttf");
+    font-family: "Dongle-light";
+    src: url("Dongle/Dongle-Light.ttf");
 }
 
 @font-face {
-font-family: "Dongle-bold";
-src: url("Dongle/Dongle-Bold.ttf");
+    font-family: "Dongle-regular";
+    src: url("Dongle/Dongle-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Dongle-bold";
+    src: url("Dongle/Dongle-Bold.ttf");
 }
 
 header {
-display: flex;
-padding: 20px;
-background-color: transparent;
-align-items: center;
-justify-content: space-between;
-position: relative;
-z-index: 10;
+    display: flex;
+    padding: 20px;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+body {
+    background-color: #f0f8ff;
+    background-image: url('images/Back.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    font-family: "Dongle-regular", sans-serif;
+    height: 100%;
 }
 
 .logo img {
-max-width: 15%;
+    max-width: 15%;
 }
 
 .nav-menu ul {
-display: flex;
-gap: 20px;
-background-color: rgba(0, 0, 0, 0.3);
-padding: 10px 20px;
-border-radius: 8px;
+    display: flex;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 .nav-menu li {
-list-style: none;
+    list-style: none;
 }
 
-.nav-menu li\:last-child {
-margin-right: 0;
+.nav-menu li:last-child {
+    margin-right: 0;
 }
 
 .nav-menu a {
-text-decoration: none;
-font-family: "Dongle-bold";
-font-size: 1.6rem;
-color: #fff;
-padding: 8px 12px;
-transition: background 0.3s, color 0.3s;
+    text-decoration: none;
+    font-family: "Dongle-bold";
+    font-size: 1.6rem;
+    color: #fff;
+    padding: 8px 12px;
+    transition: background 0.3s, color 0.3s;
 }
 
-.nav-menu a\:hover {
-background-color: rgba(255, 255, 255, 0.2);
-border-radius: 4px;
-color: #ff7f50;
+.nav-menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: #ff7f50;
+}
+
+.home-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .home-image img {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-object-fit: cover;
-z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
 @media (max-width: 480px) {
-.home-image img {
-height: 100vh;
-object-fit: cover;
-}
+    .home-image img {
+        height: 100vh;
+        object-fit: cover;
+    }
 }
 
+
 .home-content {
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-text-align: center;
-color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
 }
 
 .home-content h1 {
-font-family: "Dongle-bold";
-font-size: calc(2rem+4vw);
+    font-family: "Dongle-bold";
+    font-size: 4vw;
 }
 
 .home-content p {
-font-family: "Dongle-regular";
-font-size: calc(1.2rem+1vw);
-margin-top: -20px;
-margin-bottom: 10px;
+    font-family: "Dongle-regular";
+    font-size: 2vw;
+    margin-top: -20px;
+    margin-bottom: 10px;
 }
 
 .home-button {
-display: inline-block;
-text-decoration: none;
-color: #fff;
-background-color: #ff7f50;
-padding: 12px 30px;
-border-radius: 50px;
-font-family: "Dongle-light";
-font-size: 1.6rem;
-transition: all ease 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
 }
 
-.home-button\:hover {
-background-color: #333;
+.home-button:hover {
+    background-color: #333;
 }
 
-\#packages h3 {
-font-family: "Dongle-Bold";
-font-size: calc(2rem+2vw);
-text-align: center;
-margin: 20px 0;
+#packages h3 {
+    font-family: "Dongle-Bold";
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .destinations {
-font-size: calc(2rem + 1vw) ;
-font-family: "Dongle-bold";
-margin: 40px 80px;
-text-align: center;
+    font-size: 2.5rem;
+    font-family: "Dongle-bold";
+    margin: 40px 80px;
+    text-align: center;
 }
 
 .destinations h2 {
-margin-bottom: 40px;
-text-align: center;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .destination-grid {
-display: grid;
-grid-template-columns: rrepeat(auto-fill, minmax(250px, 1fr));
-grid-gap: 40px;
-padding: 0 10%;
-margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 0 5%;
+    margin-top: 30px;
 }
 
 @media (max-width: 768px) {
-.destination-grid {
-grid-template-columns: repeat(2, 1fr);
-}
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media (max-width: 480px) {
-.destination-grid {
-grid-template-columns: 1fr;
-}
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 .destination-item {
-display: inline-block;
-text-decoration: none;
-color: #fff;
-background-color: none;
-padding: 12px 30px;
-border-radius: 50px;
-font-family: "Dongle-light";
-font-size: 1.6rem;
-transition: all ease 0.3s;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: none;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: all ease 0.3s;
 }
 
-.destination-item\:hover {
-transform: translateY(-10px);
-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-background-color: #ff7f50;
+.destination-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    background-color: #ff7f50;
 }
 
 .destination-item img {
-width: 100%;
-height: 250px;
-object-fit: cover;
-border-bottom: 2px solid #f4f4f4;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-bottom: 2px solid #f4f4f4;
 }
 
 .destination-item h3 {
-text-decoration: none;
-color: #DAA520;
-transition: color 0.3s ease;
+    text-decoration: none;
+    color: #DAA520;
+    transition: color 0.3s ease;
 }
 
-.destination-item h3 a\:hover {
-color: #444;
+.destination-item h3 a:hover {
+    color: #444;
 }
 
 .destination-item p {
-font-family: "Dongle-regular";
-font-size: 1.6rem;
-color: #666;
-margin: 0 10px;
-line-height: 1.4;
-padding-bottom: 20px;
+    font-family: "Dongle-regular";
+    font-size: 1.6rem;
+    color: #666;
+    margin: 0 10px;
+    line-height: 1.4;
+    padding-bottom: 20px;
 }
 
 .destination-item .package-price {
-font-family: "Dongle-bold";
-font-size: 2.5rem;
-color: #333;
-position: absolute;
-bottom: 20px;
-left: 50%;
-transform: translateX(-50%);
-background-color: rgba(255, 255, 255, 0.8);
-padding: 10px 20px;
-border-radius: 25px;
+    font-family: "Dongle-bold";
+    font-size: 2.5rem;
+    color: #333;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 25px;
 }
 
-.destination-item\:hover .package-price {
-background-color: rgba(0, 0, 0, 0.6);
-color: #fff;
+.destination-item:hover .package-price {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
 }
 
 .destination-item .view-details-btn {
-display: inline-block;
-text-decoration: none;
-color: #fff;
-background-color: #333;
-padding: 10px 20px;
-border-radius: 25px;
-font-family: "Dongle-light";
-font-size: 1.4rem;
-margin-top: 15px;
-transition: all 0.3s ease;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: "Dongle-light";
+    font-size: 1.4rem;
+    margin-top: 15px;
+    transition: all 0.3s ease;
 }
 
-.destination-item .view-details-btn\:hover {
-background-color: #ff7f50;
+.destination-item .view-details-btn:hover {
+    background-color: #ff7f50;
 }
 
 .trek-title {
-font-size: 2rem;
-font-weight: bold;
-color: #333;
-text-align: center;
-margin-top: 20px;
-margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 
 .trek-package-img {
-width: 100%;
-max-width: 800px;
-height: 500px;
-object-fit: contain;
-display: block;
-margin: 20px auto;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    object-fit: contain;
+    display: block;
+    margin: 20px auto;
 }
 
 .book-button {
-background-color: #ff7f50;
-color: #fff;
+    background-color: #ff7f50;
+    color: #fff;
 }
 
-.book-button\:hover {
-background-color: #333;
+.book-button:hover {
+    background-color: #333;
 }
 
-\#gallery {
-padding: 0px;
-text-align: center;
+#gallery {
+    padding: 0px;
+    text-align: center;
 }
 
-\#gallery h3 {
-font-family: "Arial", sans-serif;
-font-size: 3rem;
-color: #333;
-margin-bottom: 40px;
+#gallery h3 {
+    font-family: "Arial", sans-serif;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
 }
 
 .gallery-item {
-display: inline-block;
-width: 30%;
-margin: 10px;
-position: relative;
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    position: relative;
 }
 
 .gallery-item img {
-width: 100%;
-height: auto;
-border-radius: 8px;
-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-transition: transform 0.3s ease;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.gallery-item img\:hover {
-transform: scale(1.05);
+.gallery-item img:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-.gallery-item {
-width: 48%;
-}
+    .gallery-item {
+        width: 48%;
+    }
 
-```
-.destination-grid {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    padding: 0 5%;
-}
+    .destination-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding: 0 5%;
+    }
 
-.home-content h1 {
-    font-size: calc(3rem + 2vw);
-}
+    .home-content h1 {
+        font-size: calc(3rem + 2vw);
+    }
 
-.home-content p {
-    font-size: calc(1.6rem + 1vw);
-}
+    .home-content p {
+        font-size: calc(1.6rem + 1vw);
+    }
 
-.home-button {
-    padding: 10px 25px;
-    font-size: 1.4rem;
-}
+    .home-button {
+        padding: 10px 25px;
+        font-size: 1.4rem;
+    }
 
-.destinations {
-    margin: 40px 20px;
-}
+    .destinations {
+        margin: 40px 20px;
+    }
 
-.destination-item img {
-    height: 200px;
-}
-```
-
+    .destination-item img {
+        height: 200px;
+    }
 }
 
 @media (max-width: 480px) {
-.gallery-item {
-width: 100%;
+    .gallery-item {
+        width: 100%;
+    }
+
+    .home-button {
+        font-size: 1.2rem;
+    }
+
+    .home-content h1 {
+        font-size: calc(2.5rem + 3vw);
+    }
+
+    .home-content p {
+        font-size: calc(1.4rem + 1vw);
+    }
+
+    .destination-item img {
+        height: 180px;
+    }
+
+    .team-member img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about h3 {
+        font-size: 3rem;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
 }
 
-```
-.home-button {
-    font-size: 1.2rem;
-}
-
-.home-content h1 {
-    font-size: calc(2.5rem + 3vw);
-}
-
-.home-content p {
-    font-size: calc(1.4rem + 1vw);
-}
-
-.destination-item img {
-    height: 180px;
-}
-
-.team-member img {
-    width: 100%;
-    height: auto;
+.about {
+    text-align: center;
+    padding: 100px;
 }
 
 .about h3 {
+    font-family: "Dongle-bold";
     font-size: 3rem;
 }
 
 .about p {
-    font-size: 1.2rem;
-}
-```
-
-}
-
-.about {
-text-align: center;
-padding: 100px;
-}
-
-.about h3 {
-font-family: "Dongle-bold";
-font-size: 3rem;
-}
-
-.about p {
-font-family: "Dongle-regular";
-font-size: 1.6rem;
-line-height: 1;
-margin-bottom: 40px;
+    font-family: "Dongle-regular";
+    font-size: 1.6rem;
+    line-height: 1;
+    margin-bottom: 40px;
 }
 
 .team-members {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .team-member img {
-width: 300px;
-height: 300px;
-margin: 20px;
-object-fit: cover;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
 }
 
 .team-member h4 {
-font-family: "Dongle-bold";
-font-size: 2rem;
+    font-family: "Dongle-bold";
+    font-size: 2rem;
 }
 
 .contact {
-padding: 80px;
-text-align: center;
-background-color: transparent;
-background-image: url('images/Back.jpeg');
-background-size: cover;
-background-position: center;
+    padding: 80px;
+    text-align: center;
+    background-color: transparent;
+    background-image: url('images/Back.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 
 .contact h3 {
-font-family: "Dongle-bold";
-font-size: 3rem;
-color: #000;
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+    color: #000;
 }
 
 .form {
-width: 100%;
-display: flex;
-flex-direction: column;
-align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 input,
 textarea {
-width: 70%;
-padding: 10px;
-margin: 10px 0;
-border: none;
-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-border-radius: 5px;
-font-size: 1.6rem;
-font-family: "Dongle-regular";
-box-sizing: border-box;
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "Dongle-regular";
+    box-sizing: border-box;
 }
 
 textarea {
-height: 250px;
+    height: 250px;
 }
 
 .form button {
-display: inline-block;
-text-decoration: none;
-color: #fff;
-background-color: #ff7f50;
-padding: 10px 30px;
-border-radius: 50px;
-font-family: "Dongle-light";
-font-size: 1.6rem;
-border: none;
-transition: all ease 0.3s;
-margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    border: none;
+    transition: all ease 0.3s;
+    margin-top: 20px;
 }
 
-.form button\:hover {
-background-color: #333;
+.form button:hover {
+    background-color: #333;
 }
 
 footer {
-background-color: #333;
-color: #fff;
-display: flex;
-justify-content: space-between;
-padding: 20px;
-align-items: center;
-margin-top: auto;
-text-align: center;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    margin-top: auto;
+    text-align: center;
 }
 
 footer p {
-font-family: "Dongle-regular";
-font-size: 1.4rem;
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {
-input,
-textarea {
-width: 100%;
-}
+    input,
+    textarea {
+        width: 100%;
+    }
 }
 
 html,
 body {
-height: 100%;
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-\#booking {
-padding: 80px 20px;
-background-color: transparent;
-text-align: center;
+
+
+#booking {
+    padding: 80px 20px;
+    background-color: transparent;
+    text-align: center;
 }
 
 .booking-form {
-width: 90%;
-max-width: 800px;
-margin: 0 auto;
-background-color: #fff;
-padding: 20px;
-border-radius: 8px;
-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .booking-form label {
-font-family: "Dongle-regular";
-font-size: 1.6rem;
-text-align: left;
-display: block;
-margin-bottom: 5px;
+    font-family: "Dongle-regular";
+    font-size: 1.6rem;
+    text-align: left;
+    display: block;
+    margin-bottom: 5px;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form textarea {
-width: 100%;
-margin: 10px 0;
-padding: 12px;
-font-size: 1.6rem;
-font-family: "Dongle-regular";
-border-radius: 5px;
-border: 1px solid #ddd;
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    font-size: 1.6rem;
+    font-family: "Dongle-regular";
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 .booking-form button {
-background-color: #ff7f50;
-color: #fff;
-font-family: "Dongle-light";
-font-size: 1.8rem;
-padding: 12px 30px;
-border-radius: 25px;
-border: none;
-cursor: pointer;
-transition: 0.3s ease;
+    background-color: #ff7f50;
+    color: #fff;
+    font-family: "Dongle-light";
+    font-size: 1.8rem;
+    padding: 12px 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
 }
 
-.booking-form button\:hover {
-background-color: #333;
-}
-body {
-height: 100%;
-margin: 0;
-padding: 0;
-display: flex;
-flex-direction: column;
+.booking-form button:hover {
+    background-color: #333;
 }
 
 body {
-background-color: #f0f8ff;
-background-image: url('images/back.jpeg');
-background-size: cover;
-background-position: center center;
-background-attachment: fixed;
-} fix
+    background-color: #f0f8ff; 
+    background-image: url('images/back.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
