@@ -95,7 +95,7 @@ header {
 
 .home-content h1 {
     font-family: "Dongle-bold";
-    font-size: calc(2rem+4w);
+    font-size: calc(2rem+4vw);
 }
 
 .home-content p {
