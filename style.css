@@ -429,11 +429,13 @@ body {
         height: 180px;
     }
 
-body {
-    font-family: "Dongle", sans-serif;
-    margin: 0;
-    padding: 0;
+.about h3{
+font-size: 3rem;
 }
+.aboutp{
+font-size:1.2ren;
+}
+
 
 main {
     padding: 20px;
@@ -442,20 +444,19 @@ main {
 
 .about {
     text-align: center;
-    padding: 60px 15%;
+    padding: 100px;
 }
 
 .about h3{
     font-family: "Dongle-bold";
-    font-size: 2.5rem;
-    color: #333;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    
 }
 
 .about p {
     font-family: "Dongle-regular";
-    font-size: 1.rem;
-    line-height: 1.6;
+    font-size: 1.6rem;
+    line-height: 1;
     margin-bottom: 40px;
 }
 
