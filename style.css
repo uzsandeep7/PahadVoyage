@@ -33,7 +33,7 @@ body {
     background-color: #f0f8ff;
     background-image: url('images/Back.jpeg');
     background-size: cover;
-    background-position: center center;
+
     background-attachment: fixed;
     font-family: "Dongle-regular", sans-serif;
     height: 100%;
