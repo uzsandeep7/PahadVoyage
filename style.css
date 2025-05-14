@@ -589,153 +589,150 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-
 #booking {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 8px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 700px;
-    margin: 30px auto;
-    text-align: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 #booking h3 {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #333;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #333;
 }
 
 .booking-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
 }
 
 .booking-form label {
-    font-size: 1.3rem;
-    font-weight: bold;
-    color: #333;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #333;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form textarea {
-    padding: 14px;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-    width: 80%;
-    max-width: 500px;
-    box-sizing: border-box;
-    transition: border-color 0.3s ease;
+  padding: 14px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  width: 80%;
+  max-width: 500px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
 }
 
 .booking-form input:focus,
 .booking-form select:focus,
 .booking-form textarea:focus {
-    border-color: #007bff;
-    outline: none;
+  border-color: #007bff;
+  outline: none;
 }
 
-.booking-form .ok-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 16px 35px;
-    border-radius: 50px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    margin-top: 20px;
-    text-decoration: none;
+.ok-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 16px 35px;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 20px;
+  text-decoration: none;
 }
 
-.booking-form .ok-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+.ok-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 .confirmation-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
 #confirmed-toggle:checked ~ .confirmation-modal {
-    display: flex;
+  display: flex;
 }
 
 .modal-content {
-    background-color: #fff;
-    padding: 35px;
-    border-radius: 12px;
-    text-align: center;
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-    width: 90%;
-    max-width: 550px;
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 550px;
 }
 
 .modal-content h2 {
-    font-size: 2.4rem;
-    margin-bottom: 12px;
-    color: #333;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+  color: #333;
 }
 
 .modal-content p {
-    font-size: 1.6rem;
-    margin-bottom: 25px;
-    color: #666;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  color: #666;
 }
 
 .cancel-btn,
 .ok-btn {
-    padding: 10px 25px;
-    margin: 0 12px;
-    border: none;
-    border-radius: 8px;
-    background-color: #007bff;
-    color: white;
-    font-size: 1.2rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-    text-align: center;
+  padding: 10px 25px;
+  margin: 0 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-align: center;
 }
 
 .cancel-btn:hover,
 .ok-btn:hover {
-    background-color: #0056b3;
-    transform: scale(1.05);
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    padding: 25px 0;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 50px;
+  background-color: #333;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
 }
 
 @media (max-width: 600px) {
-    .booking-form input,
-    .booking-form select,
-    .booking-form textarea {
-        width: 95%;
-    }
+  .booking-form input,
+  .booking-form select,
+  .booking-form textarea {
+    width: 95%;
+  }
 
-    .modal-content {
-        width: 95%;
-    }
+  .modal-content {
+    width: 95%;
+  }
 }
+
