@@ -338,7 +338,8 @@ header {
 }
 
 input,
-textarea {
+textarea,
+select {
     width: 70%;
     padding: 10px;
     margin: 10px 0;
@@ -434,7 +435,12 @@ body {
     }
 
     input,
-    textarea {
+    textarea,
+    select {
+        width: 100%;
+    }
+
+    .form button {
         width: 100%;
     }
 }
