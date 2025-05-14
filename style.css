@@ -271,6 +271,7 @@ body {
     display: block;
     margin: 20px auto;
 }
+
 #package-details {
   padding: 50px 8%;
   background: rgba(255, 255, 255, 0.9);
@@ -339,14 +340,6 @@ body {
     padding: 10px 20px;
   }
 
-.book-button {
-    background-color: #ff7f50;
-    color: #fff;
-}
-
-.book-button:hover {
-    background-color: #333;
-}
 
 #gallery {
     padding: 0px;
