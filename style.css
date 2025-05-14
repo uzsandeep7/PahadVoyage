@@ -547,3 +547,11 @@ body {
 .booking-form button:hover {
     background-color: #333;
 }
+
+body {
+    background-color: #f0f8ff; 
+    background-image: url('images/back.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
