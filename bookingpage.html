@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Book Your Trekking Package</title>
     <link rel="stylesheet" href="style.css" />
-  
 </head>
 <body>
- <header>
+  <header>
     <div class="logo">
       <a href="index.html"><img src="images/logo.jpg" alt="Pahad Voyage Nepal Logo" /></a>
     </div>
@@ -23,46 +22,56 @@
       </ul>
     </nav>
   </header>
-<main>
+
+  <main>
     <section id="booking">
-        <h3>Book Your Trek</h3>
-        <div class="booking-form">
-            <form action="#" method="POST" aria-labelledby="booking">
-                <label for="name">Full Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-required="true">
+      <h3>Book Your Trek</h3>
 
-                <label for="email">Email Address</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
+    
+      <input type="checkbox" id="confirmed-toggle" hidden />
 
-                <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required aria-required="true">
+      <div class="booking-form">
+        <form onsubmit="event.preventDefault(); document.getElementById('confirmed-toggle').checked = true;">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required aria-required="true">
 
-                <label for="destination">Choose Your Trek</label>
-                <select id="destination" name="destination" required aria-required="true">
-                    <option value="Ghorepani Poon Hill">Ghorepani Poon Hill</option>
-                    <option value="Mardi Himal Trek">Mardi Himal Trek</option>
-                    <option value="Kori Trek">Kori Trek</option>
-                     <option value="Annapurna Base Camp">Annapurna Base Camp</option>
-                     <option value="Rara Lake">Rara Lake</option>
-                     <option value="Everest Base Camp">Everest Base Camp</option>
-                </select>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required aria-required="true">
 
-                <label for="group-size">Group Size</label>
-                <input type="number" id="group-size" name="group_size" min="1" max="10" value="1" required aria-required="true">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required aria-required="true">
 
-                <label for="departure-date">Departure Date</label>
-                <input type="date" id="departure-date" name="departure_date" required aria-required="true">
+          <label for="destination">Choose Your Trek</label>
+          <select id="destination" name="destination" required aria-required="true">
+            <option value="Ghorepani Poon Hill">Ghorepani Poon Hill</option>
+            <option value="Mardi Himal Trek">Mardi Himal Trek</option>
+            <option value="Kori Trek">Kori Trek</option>
+            <option value="Annapurna Base Camp">Annapurna Base Camp</option>
+            <option value="Rara Lake">Rara Lake</option>
+            <option value="Everest Base Camp">Everest Base Camp</option>
+          </select>
 
-                <label for="special-requests">Special Requests</label>
-                <textarea id="special-requests" name="special_requests" rows="4" placeholder="Any special requests or questions?" required aria-required="true"></textarea>
+          <label for="group-size">Group Size</label>
+          <input type="number" id="group-size" name="group_size" min="1" max="10" value="1" required aria-required="true">
 
-                <button type="submit">Submit Booking</button>
-            </form>
-        </div>
+          <label for="departure-date">Departure Date</label>
+          <input type="date" id="departure-date" name="departure_date" required aria-required="true">
+
+          <label for="special-requests">Special Requests</label>
+          <textarea id="special-requests" name="special_requests" rows="4" placeholder="Any special requests or questions?" required aria-required="true"></textarea>
+
+          <button type="submit">Submit Booking</button>
+        </form>
+      </div>
+
+
+      <div class="confirmation-message">✅ Booking Confirmed! We’ll get back to you shortly.</div>
     </section>
-</main>
-    <footer>
-        <p>&copy; 2024 Pahad Voyage. All Rights Reserved.</p>
-    </footer>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Pahad Voyage. All Rights Reserved.</p>
+  </footer>
+
 </body>
 </html>
