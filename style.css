@@ -500,50 +500,62 @@ body {
 }
 
 #booking {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
     width: 100%;
-    max-width: 700px;
-    margin: 30px auto;
+    max-width: 750px;
+    margin: 40px auto;
 }
 
 .booking-form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
 }
 
 .booking-form label {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
     margin-bottom: 5px;
+    color: #333;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form textarea {
-    padding: 12px;
+    padding: 14px;
     font-size: 1rem;
     border-radius: 8px;
     border: 1px solid #ddd;
     width: 100%;
     box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+    border-color: #007bff;
+    outline: none;
 }
 
 .booking-form button {
     background-color: #007bff;
     color: white;
-    padding: 15px;
-    border-radius: 8px;
-    font-size: 1.2rem;
+    padding: 16px 35px;
+    border-radius: 50px;
+    font-size: 1.3rem;
+    font-weight: bold;
     cursor: pointer;
     border: none;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .booking-form button:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 .confirmation-modal {
@@ -552,7 +564,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.7);
     display: none;
     justify-content: center;
     align-items: center;
@@ -564,48 +576,52 @@ body {
 }
 
 .modal-content {
-    background-color: white;
-    padding: 30px;
+    background-color: #fff;
+    padding: 35px;
     border-radius: 12px;
     text-align: center;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
     width: 90%;
-    max-width: 500px;
+    max-width: 550px;
+    font-family: 'Dongle', sans-serif;
 }
 
 .modal-content h2 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+    color: #333;
 }
 
 .modal-content p {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: #666;
 }
 
 .cancel-btn,
 .ok-btn {
-    font-family: 'Dongle', sans-serif;
-    padding: 8px 20px;
-    margin: 0 10px;
+    padding: 10px 25px;
+    margin: 0 12px;
     border: none;
-    border-radius: 6px;
+    border-radius: 8px;
     background-color: #007bff;
     color: white;
+    font-size: 1.2rem;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .cancel-btn:hover,
 .ok-btn:hover {
     background-color: #0056b3;
+    transform: scale(1.05);
 }
 
 footer {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 25px 0;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.2rem;
+    margin-top: 50px;
 }
-   
