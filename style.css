@@ -1,4 +1,3 @@
-
 * {
     margin: 0;
     padding: 0;
@@ -20,6 +19,24 @@
     src: url("Dongle/Dongle-Bold.ttf");
 }
 
+body {
+    font-family: "Dongle-regular";
+    background-color: #f0f8ff;
+    background-image: url('images/Back.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+html,
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
 header {
     display: flex;
     padding: 20px;
@@ -28,16 +45,6 @@ header {
     justify-content: space-between;
     position: relative;
     z-index: 10;
-}
-
-body {
-    background-color: #f0f8ff;
-    background-image: url('images/Back.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    font-family: "Dongle-regular", sans-serif;
-    height: 100%;
 }
 
 .logo img {
@@ -56,14 +63,10 @@ body {
     list-style: none;
 }
 
-.nav-menu li:last-child {
-    margin-right: 0;
-}
-
 .nav-menu a {
     text-decoration: none;
     font-family: "Dongle-bold";
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #fff;
     padding: 8px 12px;
     transition: background 0.3s, color 0.3s;
@@ -75,18 +78,12 @@ body {
     color: #ff7f50;
 }
 
-.home-image {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-
 .home-image img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
     z-index: -1;
 }
@@ -102,12 +99,12 @@ body {
 
 .home-content h1 {
     font-family: "Dongle-bold";
-    font-size: 5vw;
+    font-size: calc(2rem + 4vw);
 }
 
 .home-content p {
     font-family: "Dongle-regular";
-    font-size: 2.2vw;
+    font-size: calc(1.2rem + 1vw);
     margin-top: -20px;
     margin-bottom: 10px;
 }
@@ -120,7 +117,7 @@ body {
     padding: 12px 30px;
     border-radius: 50px;
     font-family: "Dongle-light";
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     transition: all ease 0.3s;
 }
 
@@ -129,14 +126,14 @@ body {
 }
 
 #packages h3 {
-    font-family: "Dongle-Bold";
-    font-size: 3rem;
+    font-family: "Dongle-bold";
+    font-size: calc(2rem + 2vw);
     text-align: center;
     margin: 20px 0;
 }
 
 .destinations {
-    font-size: 3rem;
+    font-size: calc(2rem + 1vw);
     font-family: "Dongle-bold";
     margin: 40px 80px;
     text-align: center;
@@ -149,10 +146,9 @@ body {
 
 .destination-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 40px;
-    padding: 0 5%;
-    margin-top: 30px;
+    padding: 0 10%;
 }
 
 .destination-item {
@@ -163,7 +159,7 @@ body {
     padding: 12px 30px;
     border-radius: 50px;
     font-family: "Dongle-light";
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     transition: all ease 0.3s;
 }
 
@@ -183,6 +179,7 @@ body {
 .destination-item h3 {
     text-decoration: none;
     color: #DAA520;
+    font-family: "Dongle-bold";
     transition: color 0.3s ease;
 }
 
@@ -192,7 +189,7 @@ body {
 
 .destination-item p {
     font-family: "Dongle-regular";
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: #666;
     margin: 0 10px;
     line-height: 1.4;
@@ -201,7 +198,7 @@ body {
 
 .destination-item .package-price {
     font-family: "Dongle-bold";
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: #333;
     position: absolute;
     bottom: 20px;
@@ -225,7 +222,7 @@ body {
     padding: 10px 20px;
     border-radius: 25px;
     font-family: "Dongle-light";
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin-top: 15px;
     transition: all 0.3s ease;
 }
@@ -235,8 +232,8 @@ body {
 }
 
 .trek-title {
-    font-size: 2.2rem;
-    font-weight: bold;
+    font-size: calc(1.5rem + 1vw);
+    font-family: "Dongle-bold";
     color: #333;
     text-align: center;
     margin-top: 20px;
@@ -252,23 +249,14 @@ body {
     margin: 20px auto;
 }
 
-.book-button {
-    background-color: #ff7f50;
-    color: #fff;
-}
-
-.book-button:hover {
-    background-color: #333;
-}
-
 #gallery {
     padding: 0px;
     text-align: center;
 }
 
 #gallery h3 {
-    font-family: "Arial", sans-serif;
-    font-size: 3rem;
+    font-family: "Dongle-bold";
+    font-size: 2.5rem;
     color: #333;
     margin-bottom: 40px;
 }
@@ -292,6 +280,73 @@ body {
     transform: scale(1.05);
 }
 
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 48%;
+    }
+
+    .destination-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        padding: 0 5%;
+    }
+
+    .home-content h1 {
+        font-size: calc(1.8rem + 4vw);
+    }
+
+    .home-content p {
+        font-size: calc(1.4rem + 1vw);
+    }
+
+    .home-button {
+        padding: 10px 25px;
+        font-size: 1.4rem;
+    }
+
+    .destinations {
+        margin: 40px 20px;
+    }
+
+    .destination-item img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+
+    .home-button {
+        font-size: 1.2rem;
+    }
+
+    .home-content h1 {
+        font-size: calc(2rem + 3vw);
+    }
+
+    .home-content p {
+        font-size: calc(1.4rem + 1vw);
+    }
+
+    .destination-item img {
+        height: 180px;
+    }
+
+    .team-member img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about h3 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
+}
+
 .about {
     text-align: center;
     padding: 100px;
@@ -299,12 +354,12 @@ body {
 
 .about h3 {
     font-family: "Dongle-bold";
-    font-size: 3.2rem;
+    font-size: 3rem;
 }
 
 .about p {
     font-family: "Dongle-regular";
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     line-height: 1;
     margin-bottom: 40px;
 }
@@ -324,7 +379,7 @@ body {
 
 .team-member h4 {
     font-family: "Dongle-bold";
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .contact {
@@ -338,7 +393,7 @@ body {
 
 .contact h3 {
     font-family: "Dongle-bold";
-    font-size: 3.2rem;
+    font-size: 3rem;
     color: #000;
 }
 
@@ -357,7 +412,7 @@ textarea {
     border: none;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     font-family: "Dongle-regular";
     box-sizing: border-box;
 }
@@ -374,7 +429,7 @@ textarea {
     padding: 10px 30px;
     border-radius: 50px;
     font-family: "Dongle-light";
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     border: none;
     transition: all ease 0.3s;
     margin-top: 20px;
@@ -397,7 +452,7 @@ footer {
 
 footer p {
     font-family: "Dongle-regular";
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 @media (max-width: 768px) {
@@ -405,126 +460,4 @@ footer p {
     textarea {
         width: 100%;
     }
-
-    .destination-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        padding: 0 5%;
-    }
-
-    .home-content h1 {
-        font-size: calc(3rem + 2vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.6rem + 1vw);
-    }
-
-    .home-button {
-        padding: 10px 25px;
-        font-size: 1.6rem;
-    }
-
-    .destinations {
-        margin: 40px 20px;
-    }
-
-    .destination-item img {
-        height: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-    }
-
-    .home-button {
-        font-size: 1.4rem;
-    }
-
-    .home-content h1 {
-        font-size: calc(2.5rem + 3vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.4rem + 1vw);
-    }
-
-    .destination-item img {
-        height: 180px;
-    }
-
-    .team-member img {
-        width: 100%;
-        height: auto;
-    }
-
-    .about h3 {
-        font-size: 2.8rem;
-    }
-
-    .about p {
-        font-size: 1.4rem;
-    }
-}
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-#booking {
-    padding: 80px 20px;
-    background-color: transparent;
-    text-align: center;
-}
-
-.booking-form {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.booking-form label {
-    font-family: "Dongle-regular";
-    font-size: 1.8rem;
-    text-align: left;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px;
-    font-size: 1.8rem;
-    font-family: "Dongle-regular";
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.booking-form button {
-    background-color: #ff7f50;
-    color: #fff;
-    font-family: "Dongle-light";
-    font-size: 2rem;
-    padding: 12px 30px;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.booking-form button:hover {
-    background-color: #333;
 }
