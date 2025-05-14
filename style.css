@@ -229,7 +229,7 @@ header {
 .book-button:hover {
     background-color: #333;
 .book-button {
-        padding:8 px 20x;
+        padding:8 px 20px;
         font-size: 1.4rem;
     }
 }
