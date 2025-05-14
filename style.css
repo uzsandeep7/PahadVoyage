@@ -431,13 +431,18 @@ body {
 
  }
 
+   .team-member img {
+        width: 100%;
+        height: auto;
+    }
+
     .about h3 {
         font-size: 3rem;
     }
 
     .about p {
         font-size: 1.2rem;
-    
+    }
 }
 
 .about {
@@ -445,9 +450,9 @@ body {
     padding: 100px;
 }
 
-.about h2 {
+.about h3 {
     font-family: "Dongle-bold";
-    font-size: 2rem;
+    font-size: 3rem;
 }
 
 .about p {
@@ -457,9 +462,22 @@ body {
     margin-bottom: 40px;
 }
 
-.contact {
-    padding: 80px;
-    text-align: center;
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.team-member img {
+    width: 300px;
+    height: 300px;
+    margin: 20px;
+    object-fit: cover;
+}
+
+.team-member h4 {
+    font-family: "Dongle-bold";
+    font-size: 2rem;
 }
 
 .contact h3 {
