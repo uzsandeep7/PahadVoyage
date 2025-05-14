@@ -488,13 +488,7 @@ body {
     flex-direction: column;
 }
 
-body {
-    background-color: #f0f8ff;
-    background-image: url('images/Back.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
+
 
 #booking {
     padding: 80px 20px;
