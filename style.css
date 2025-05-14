@@ -239,87 +239,20 @@ body {
     background-color: #ff7f50;
 }
 
-.trek-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-
-.trek-package-img {
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-    object-fit: contain;
-    display: block;
-    margin: 20px auto;
-}
-
-.book-button {
-    background-color: #ff7f50;
-    color: #fff;
-}
-
-.book-button:hover {
-    background-color: #333;
-}
-
-#gallery {
-    padding: 0px;
-    text-align: center;
-}
-
-#gallery h3 {
-    font-family: "Arial", sans-serif;
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 40px;
-}
-
-.gallery-item {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    position: relative;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-}
-
-.gallery-item img:hover {
-    transform: scale(1.05);
-}
-
 @media (max-width: 768px) {
-    .gallery-item {
-        width: 48%;
-    }
-    
-    .destination-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        padding: 0 5%;
-    }
-    
     .home-content h1 {
         font-size: calc(3rem + 2vw);
     }
-    
+
     .home-content p {
         font-size: calc(1.6rem + 1vw);
     }
-    
+
     .home-button {
         padding: 10px 25px;
         font-size: 1.4rem;
     }
-    
+
     .destinations {
         margin: 40px 20px;
     }
@@ -330,10 +263,6 @@ body {
 }
 
 @media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-    }
-
     .home-button {
         font-size: 1.2rem;
     }
@@ -345,205 +274,8 @@ body {
     .home-content p {
         font-size: calc(1.4rem + 1vw);
     }
-    
+
     .destination-item img {
         height: 180px;
     }
-    
-    .team-member img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .about h3 {
-        font-size: 3rem;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-    }
-}
-
-.about {
-    text-align: center;
-    padding: 100px;
-}
-
-.about h3 {
-    font-family: "Dongle-bold";
-    font-size: 3rem;
-}
-
-.about p {
-    font-family: "Dongle-regular";
-    font-size: 1.6rem;
-    line-height: 1;
-    margin-bottom: 40px;
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team-member img {
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    object-fit: cover;
-}
-
-.team-member h4 {
-    font-family: "Dongle-bold";
-    font-size: 2rem;
-}
-
-.contact {
-    padding: 80px;
-    text-align: center;
-    background-color: transparent;
-    background-image: url('images/Back.jpeg');
-    background-size: cover;
-    background-position: center;
-}
-
-.contact h3 {
-    font-family: "Dongle-bold";
-    font-size: 3rem;
-    color: #000;
-}
-
-.form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input,
-textarea {
-    width: 70%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-family: "Dongle-regular";
-    box-sizing: border-box;
-}
-
-textarea {
-    height: 250px;
-}
-
-.form button {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #ff7f50;
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-family: "Dongle-light";
-    font-size: 1.6rem;
-    border: none;
-    transition: all ease 0.3s;
-    margin-top: 20px;
-}
-
-.form button:hover {
-    background-color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    margin-top: auto;
-    text-align: center;
-}
-
-footer p {
-    font-family: "Dongle-regular";
-    font-size: 1.4rem;
-}
-
-@media (max-width: 768px) {
-    input,
-    textarea {
-        width: 100%;
-    }
-}
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-body {
-    background-color: #f0f8ff;
-    background-image: url('images/Back.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-}
-
-#booking {
-    padding: 80px 20px;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.booking-form {
-    width: 90%;
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-}
-
-.booking-form label {
-    font-family: "Dongle-regular";
-    font-size: 1.6rem;
-    text-align: left;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form textarea {
-    width: 100%;
-    margin: 10px 0;
-    padding: 12px;
-    font-size: 1.6rem;
-    font-family: "Dongle-regular";
-    border-radius: 5px;
-    border: 1px solid #ddd;
-}
-
-.booking-form button {
-    background-color: #ff7f50;
-    color: #fff;
-    font-family: "Dongle-light";
-    font-size: 1.8rem;
-    padding: 12px 30px;
-    border-radius: 25px;
-    border: none;
-    cursor: pointer;
-    transition: 0.3s ease;
-}
-
-.booking-form button:hover {
-    background-color: #333;
 }
