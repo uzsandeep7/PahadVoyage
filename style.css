@@ -427,15 +427,17 @@ body {
 
     .destination-item img {
         height: 180px;
-    }
+    
 
-.about h3 {
+ }
+
+    .about h3 {
         font-size: 3rem;
     }
 
     .about p {
         font-size: 1.2rem;
-    }
+    
 }
 
 .about {
@@ -443,19 +445,17 @@ body {
     padding: 100px;
 }
 
-.about h2{
+.about h2 {
     font-family: "Dongle-bold";
     font-size: 2rem;
 }
 
 .about p {
     font-family: "Dongle-regular";
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1;
     margin-bottom: 40px;
 }
-
-
 
 .contact {
     padding: 80px;
