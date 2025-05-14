@@ -1,120 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Book Now - Ghorepani: Poon Hill Trek</title>
-    <link rel="stylesheet" href="style.css" />
-    <style>
-      main {
-        padding: 2rem;
-        max-width: 800px;
-        margin: auto;
-        background-color: rgba(255, 255, 255, 0.95);
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book Now - Ghorepani: Poon Hill Trek</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    main {
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
 
-      h1 {
-        text-align: center;
-        margin-bottom: 1rem;
-        font-size: 2.5rem;
-      }
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2.5rem;
+    }
 
-      form label {
-        font-weight: bold;
-        display: block;
-        margin-top: 1rem;
-        font-size: 1.2rem;
-      }
+    form label {
+      font-weight: bold;
+      display: block;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
 
-      form input, form select, form textarea {
-        width: 100%;
-        padding: 0.8rem;
-        margin-top: 0.3rem;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 1rem;
-      }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.8rem;
+      margin-top: 0.3rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 1rem;
+    }
 
-      button {
-        margin-top: 1.5rem;
-        width: 100%;
-        padding: 1rem;
-        background-color: #28a745;
-        color: white;
-        border: none;
-        font-size: 1.2rem;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+    button {
+      margin-top: 1.5rem;
+      width: 100%;
+      padding: 1rem;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-      button:hover {
-        background-color: #218838;
-      }
+    button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
 
-      @media screen and (max-width: 600px) {
-        main {
-          padding: 1rem;
-        }
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.jpg" alt="Pahad Voyage Nepal Logo" /></a>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>Book Ghorepani: Poon Hill Trek</h1>
 
-        h1 {
-          font-size: 2rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
+    <form action="booking-success.html" method="get">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required />
 
-    <header>
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.jpg" alt="Pahad Voyage Nepal Logo" /></a>
-      </div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="packages.html">Packages</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li>
-        </ul>
-      </nav>
-    </header>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
 
-    <!-- Booking Form -->
-    <main>
-      <h1>Book Ghorepani: Poon Hill Trek</h1>
-      <form action="submit-booking.php" method="POST">
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" required />
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required />
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
+      <label for="startdate">Preferred Start Date</label>
+      <input type="date" id="startdate" name="startdate" required />
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" required />
+      <label for="groupSize">Group Size</label>
+      <input type="number" id="groupSize" name="groupSize" min="1" max="16" required />
 
-        <label for="startdate">Preferred Start Date</label>
-        <input type="date" id="startdate" name="startdate" required />
+      <label for="nationality">Nationality</label>
+      <input type="text" id="nationality" name="nationality" required />
 
-        <label for="groupSize">Group Size</label>
-        <input type="number" id="groupSize" name="groupSize" min="1" max="16" required />
+      <label for="notes">Additional Notes</label>
+      <textarea id="notes" name="notes" rows="4" placeholder="Food preference, medical info, etc."></textarea>
 
-        <label for="nationality">Nationality</label>
-        <input type="text" id="nationality" name="nationality" required />
+      <button type="submit">Submit Booking</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2024 Pahad Voyage Nepal. All Rights Reserved.</p>
+  </footer>
 
-        <label for="notes">Additional Notes</label>
-        <textarea id="notes" name="notes" rows="4" placeholder="Food preference, medical info, etc."></textarea>
-
-        <button type="submit">Submit Booking</button>
-      </form>
-    </main>
-
-  
-    <footer>
-      <p>&copy; 2024 Pahad Voyage Nepal. All Rights Reserved.</p>
-    </footer>
-
-  </body>
+</body>
 </html>
+
