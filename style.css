@@ -403,7 +403,6 @@ body {
     background-attachment: fixed;
 }
 
-/* Booking Page Styles */
 #booking {
     padding: 80px 20px;
     background-color: #f9f9f9;
@@ -469,67 +468,68 @@ body {
 }
 
 @media (max-width: 768px) {
-    .gallery-item {
-        width: 48%;
+    header {
+        flex-direction: column;
     }
 
-    .destination-grid {
-        padding: 0 5%;
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .home-content h1 {
-        font-size: calc(1.8rem + 4vw);
+        font-size: 2.5rem;
     }
 
     .home-content p {
-        font-size: calc(1.4rem + 1vw);
+        font-size: 1.5rem;
     }
 
     .home-button {
-        padding: 10px 25px;
         font-size: 1.4rem;
+        padding: 12px 30px;
     }
 
-    .destinations {
-        margin: 40px 20px;
+    .destination-item {
+        width: 45%;
     }
 
-    .destination-item img {
-        height: 200px;
+    .gallery-item {
+        width: 45%;
     }
 
-    input,
-    textarea,
-    select {
-        width: 100%;
-    }
-
-    .form button {
-        width: 100%;
-    }
-
-    .booking-form {
-        width: 90%;
-    }
-
-    #booking h3 {
-        font-size: 2rem;
-    }
-
-    .booking-form input,
-    .booking-form select,
-    .booking-form textarea {
-        font-size: 1.2rem;
-    }
-
-    .booking-form button {
-        font-size: 1.4rem;
-        padding: 10px 25px;
+    .team-member img {
+        width: 45%;
+        margin: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .destination-grid {
-        grid-template-columns: 1fr;
+    .destination-item,
+    .gallery-item,
+    .team-member img {
+        width: 100%;
+    }
+
+    .home-content h1 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .home-button {
+        font-size: 1.4rem;
+        padding: 8px 20px;
+    }
+
+    .contact input,
+    .contact textarea {
+        width: 80%;
+    }
+
+    .form button {
+        font-size: 1.4rem;
     }
 }
