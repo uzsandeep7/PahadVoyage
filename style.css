@@ -98,7 +98,6 @@ body {
     }
 }
 
-
 .home-content {
     position: absolute;
     top: 50%;
@@ -273,82 +272,83 @@ body {
 }
 
 #package-details {
-  padding: 50px 8%;
-  background: rgba(255, 255, 255, 0.9);
-  border-radius: 12px;
-  font-family: "Dongle", sans-serif;
-  color: #333;
-  max-width: 1000px;
-  margin: 40px auto;
+    padding: 50px 8%;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    font-family: "Dongle", sans-serif;
+    color: #333;
+    max-width: 1000px;
+    margin: 40px auto;
 }
 
 #package-details h2, 
 #package-details h3 {
-  color: #2e4a62;
-  font-size: 2.2rem;
-  margin: 20px 0;
+    color: #2e4a62;
+    font-size: 2.2rem;
+    margin: 20px 0;
 }
 
 #package-details p, 
 #package-details li {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
 }
 
 #package-details ul {
-  padding-left: 20px;
+    padding-left: 20px;
 }
 
 .trek-package-img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 8px;
-  margin: 30px auto;
-  display: block;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 800px;
+    border-radius: 8px;
+    margin: 30px auto;
+    display: block;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .book-button {
-  display: inline-block;
-  background: #ff7f50;
-  color: white;
-  padding: 12px 28px;
-  font-size: 1.6rem;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-  margin-top: 20px;
+    display: inline-block;
+    background: #ff7f50;
+    color: white;
+    padding: 12px 28px;
+    font-size: 1.6rem;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    margin-top: 20px;
 }
 
 .book-button:hover {
-  background: #333;
+    background: #333;
 }
+
 #package-details {
-  padding: 50px 8%;
-  background: transparent; 
-  border-radius: 12px;
-  font-family: "Dongle", sans-serif;
-  color: #333;
-  max-width: 1000px;
-  margin: 40px auto;
+    padding: 50px 8%;
+    background: transparent; 
+    border-radius: 12px;
+    font-family: "Dongle", sans-serif;
+    color: #333;
+    max-width: 1000px;
+    margin: 40px auto;
 }
 
 @media (max-width: 768px) {
-  #package-details {
-    padding: 30px 5%;
-  }
+    #package-details {
+        padding: 30px 5%;
+    }
 
-  #package-details h2, 
-  #package-details h3 {
-    font-size: 1.8rem;
-  }
+    #package-details h2, 
+    #package-details h3 {
+        font-size: 1.8rem;
+    }
 
-  .book-button {
-    font-size: 1.4rem;
-    padding: 10px 20px;
-  }
-
+    .book-button {
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
+}
 
 #gallery {
     padding: 0px;
@@ -401,176 +401,9 @@ body {
 
     .home-button {
         padding: 10px 25px;
-        font-size: 1.4rem;
-    }
-
-    .destinations {
-        margin: 40px 20px;
-    }
-
-    .destination-item img {
-        height: 200px;
     }
 }
 
-@media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-    }
-
-    .home-button {
-        font-size: 1.2rem;
-    }
-
-    .home-content h1 {
-        font-size: calc(2.5rem + 3vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.4rem + 1vw);
-    }
-
-    .destination-item img {
-        height: 180px;
-    }
-
-    .team-member img {
-        width: 100%;
-        height: auto;
-    }
-
-    .about h3 {
-        font-size: 3rem;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-    }
-}
-
-.about {
-    text-align: center;
-    padding: 100px;
-}
-
-.about h3 {
-    font-family: "Dongle-bold";
-    font-size: 3rem;
-}
-
-.about p {
-    font-family: "Dongle-regular";
-    font-size: 1.6rem;
-    line-height: 1;
-    margin-bottom: 40px;
-}
-
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.team-member img {
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    object-fit: cover;
-}
-
-.team-member h4 {
-    font-family: "Dongle-bold";
-    font-size: 2rem;
-}
-
-.contact {
-    padding: 80px;
-    text-align: center;
-    background-color: transparent;
-    background-image: url('images/Back.jpeg');
-    background-size: cover;
-    background-position: center;
-}
-
-.contact h3 {
-    font-family: "Dongle-bold";
-    font-size: 3rem;
-    color: #000;
-}
-
-.form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-input,
-textarea {
-    width: 70%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-family: "Dongle-regular";
-    box-sizing: border-box;
-}
-
-textarea {
-    height: 250px;
-}
-
-.form button {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #ff7f50;
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-family: "Dongle-light";
-    font-size: 1.6rem;
-    border: none;
-    transition: all ease 0.3s;
-    margin-top: 20px;
-}
-
-.form button:hover {
-    background-color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    margin-top: auto;
-    text-align: center;
-}
-
-footer p {
-    font-family: "Dongle-regular";
-    font-size: 1.4rem;
-}
-
-@media (max-width: 768px) {
-    input,
-    textarea {
-        width: 100%;
-    }
-}
-
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
 #booking {
     padding: 80px 20px;
     background-color: transparent;
@@ -639,15 +472,4 @@ body {
 
 #confirmed-toggle:checked ~ .confirmation-message {
     display: block;
-}
-
-
-
-
-body {
-    background-color: #f0f8ff; 
-    background-image: url('images/back.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
 }
