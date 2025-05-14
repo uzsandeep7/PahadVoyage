@@ -429,81 +429,33 @@ body {
         height: 180px;
     }
 
-.about h3{
-font-size: 3rem;
-}
-.aboutp{
-font-size:1.2ren;
-}
+.about h3 {
+        font-size: 3rem;
+    }
 
-
-main {
-    padding: 20px;
+    .about p {
+        font-size: 1.2rem;
+    }
 }
-
 
 .about {
     text-align: center;
     padding: 100px;
 }
 
-.about h3{
+.about h2{
     font-family: "Dongle-bold";
-    font-size: 3rem;
-    
+    font-size: 2rem;
 }
 
 .about p {
     font-family: "Dongle-regular";
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     line-height: 1;
     margin-bottom: 40px;
 }
 
 
-section {
-    padding: 40px 15%;
-}
-
-section h2 {
-    font-family: "Dongle-bold";
-    font-size: 2.0rem;
-    margin-top: 30px;
-}
-
-section p {
-    font-family: "Dongle-regular";
-    font-size: 1.6rem;
-    line-height: 1.6;
-    margin-bottom: 30px;
-}
-
-
-@media (max-width: 768px) {
-    .about {
-        padding: 40px 10%;
-    }
-
-    .about h2{
-        font-size: 2rem;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-    }
-
-    section {
-        padding: 20px 10%;
-    }
-
-    section h2{
-        font-size: 1.6rem;
-    }
-
-    section p {
-        font-size: 1.2rem;
-    
-}
 
 .contact {
     padding: 80px;
