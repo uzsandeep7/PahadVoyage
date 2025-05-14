@@ -504,23 +504,32 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 
 input,
 textarea {
     width: 70%;
-    padding: 10px;
+    padding: 12px;
     margin: 10px 0;
     border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
     font-size: 1.6rem;
     font-family: "Dongle-regular";
     box-sizing: border-box;
+    transition: all 0.3s ease;
 }
 
 textarea {
     height: 250px;
+    resize: none;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.6);
 }
 
 .form button {
@@ -528,17 +537,18 @@ textarea {
     text-decoration: none;
     color: #fff;
     background-color: #ff7f50;
-    padding: 10px 30px;
+    padding: 12px 35px;
     border-radius: 50px;
     font-family: "Dongle-light";
     font-size: 1.6rem;
     border: none;
-    transition: all ease 0.3s;
+    transition: all 0.3s ease;
     margin-top: 20px;
 }
 
 .form button:hover {
     background-color: #333;
+    transform: translateY(-2px);
 }
 
 footer {
@@ -546,10 +556,10 @@ footer {
     color: #fff;
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 15px 30px;
     align-items: center;
-    margin-top: auto;
     text-align: center;
+    margin-top: auto;
 }
 
 footer p {
@@ -560,7 +570,77 @@ footer p {
 @media (max-width: 768px) {
     input,
     textarea {
-        width: 100%;
+        width: 90%;
+    }
+}
+
+.confirmation-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    transition: opacity 0.3s ease;
+}
+
+#confirmed-toggle:checked ~ .confirmation-modal {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    font-family: "Dongle-bold", sans-serif;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
+}
+
+.modal-content p {
+    font-size: 1.5rem;
+    margin-bottom: 25px;
+}
+
+.cancel-btn,
+.ok-btn {
+    font-family: "Dongle-regular", sans-serif;
+    display: inline-block;
+    padding: 10px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cancel-btn:hover,
+.ok-btn:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }
 
@@ -571,60 +651,4 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-}
-.confirmation-modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.6);
-  z-index: 1000;
-}
-
-#confirmed-toggle:checked ~ .confirmation-modal {
-  display: flex;
-}
-
-.modal-content {
-  background-color: white;
-  padding: 30px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  width: 90%;
-  max-width: 400px;
-  font-family: "Dongle-bold", sans-serif;
-}
-
-.modal-content h2 {
-  font-size: 2.2rem;
-  margin-bottom: 10px;
-}
-
-.modal-content p {
-  font-size: 1.5rem;
-  margin-bottom: 20px;
-}
-
-.cancel-btn,
-.ok-btn {
-  font-family: "Dongle-regular", sans-serif;
-  display: inline-block;
-  padding: 8px 20px;
-  margin: 0 10px;
-  border: none;
-  border-radius: 6px;
-  background-color: #007bff;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.cancel-btn:hover,
-.ok-btn:hover {
-  background-color: #0056b3;
 }
