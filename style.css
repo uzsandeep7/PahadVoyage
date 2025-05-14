@@ -22,7 +22,7 @@
 header {
     display: flex;
     padding: 20px;
-    background-color: transparent;
+
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -38,6 +38,7 @@ body {
     font-family: "Dongle-regular", sans-serif;
     height: 100%;
 }
+
 
 .logo img {
     max-width: 15%;
@@ -276,7 +277,7 @@ body {
 
 #package-details {
   padding: 50px 8%;
-  background: rgba(255, 255, 255, 0.9);
+  background: transparent;
   border-radius: 12px;
   font-family: "Dongle", sans-serif;
   color: #333;
@@ -480,10 +481,6 @@ body {
 .contact {
     padding: 80px;
     text-align: center;
-    background-color: transparent;
-    background-image: url('images/Back.jpeg');
-    background-size: cover;
-    background-position: center;
 }
 
 .contact h3 {
@@ -566,6 +563,7 @@ body {
     flex-direction: column;
 }
 
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -576,7 +574,7 @@ body {
 
 #booking {
   padding: 40px 20px;
-  background: #f9f9f9;
+
   min-height: 100vh;
 }
 
