@@ -403,7 +403,71 @@ body {
     background-attachment: fixed;
 }
 
-/* Media Queries */
+/* Booking Page Styles */
+#booking {
+    padding: 80px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#booking h3 {
+    font-family: "Dongle-bold";
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.booking-form {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.booking-form label {
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    text-align: left;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-family: "Dongle-regular";
+}
+
+.booking-form textarea {
+    height: 150px;
+}
+
+.booking-form button {
+    background-color: #ff7f50;
+    color: #fff;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.booking-form button:hover {
+    background-color: #333;
+}
+
 @media (max-width: 768px) {
     .gallery-item {
         width: 48%;
@@ -443,39 +507,29 @@ body {
     .form button {
         width: 100%;
     }
+
+    .booking-form {
+        width: 90%;
+    }
+
+    #booking h3 {
+        font-size: 2rem;
+    }
+
+    .booking-form input,
+    .booking-form select,
+    .booking-form textarea {
+        font-size: 1.2rem;
+    }
+
+    .booking-form button {
+        font-size: 1.4rem;
+        padding: 10px 25px;
+    }
 }
 
 @media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-    }
-
-    .home-button {
-        font-size: 1.2rem;
-    }
-
-    .home-content h1 {
-        font-size: calc(2rem + 3vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.4rem + 1vw);
-    }
-
-    .destination-item img {
-        height: 180px;
-    }
-
-    .team-member img {
-        width: 100%;
-        height: auto;
-    }
-
-    .about h3 {
-        font-size: 2.5rem;
-    }
-
-    .about p {
-        font-size: 1.2rem;
+    .destination-grid {
+        grid-template-columns: 1fr;
     }
 }
