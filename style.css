@@ -571,9 +571,6 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-
-
 #booking {
     padding: 80px 20px;
     background-color: transparent;
@@ -591,7 +588,7 @@ body {
 }
 
 .booking-form label {
-    font-family: "Dongle-regular";
+    font-family: "Dongle", sans-serif;
     font-size: 1.6rem;
     text-align: left;
     display: block;
@@ -605,7 +602,7 @@ body {
     margin: 10px 0;
     padding: 12px;
     font-size: 1.6rem;
-    font-family: "Dongle-regular";
+    font-family: "Dongle", sans-serif;
     border-radius: 5px;
     border: 1px solid #ddd;
 }
@@ -613,7 +610,7 @@ body {
 .booking-form button {
     background-color: #ff7f50;
     color: #fff;
-    font-family: "Dongle-light";
+    font-family: "Dongle", sans-serif;
     font-size: 1.8rem;
     padding: 12px 30px;
     border-radius: 25px;
@@ -625,6 +622,27 @@ body {
 .booking-form button:hover {
     background-color: #333;
 }
+
+
+.confirmation-message {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e0ffe0;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+    color: #2e7d32;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+
+#confirmed-toggle:checked ~ .confirmation-message {
+    display: block;
+}
+
+
+
 
 body {
     background-color: #f0f8ff; 
