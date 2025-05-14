@@ -85,7 +85,7 @@ header {
 
 .home-content h1 {
     font-family: "Dongle-bold";
-    font-size: calc(2rem + 4vw); /* Scalable font size */
+    font-size: calc(2rem + 4vw);
 }
 
 .home-content p {
@@ -113,7 +113,7 @@ header {
 
 #packages h3 {
     font-family: "Dongle-Bold";
-    font-size: calc(2rem + 2vw); /* Scalable font size */
+    font-size: calc(2rem + 2vw);
     text-align: center;
     margin: 20px 0;
 }
@@ -127,12 +127,11 @@ header {
 
 .destinations h2 {
     margin-bottom: 40px;
-    text-align: center;
 }
 
 .destination-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     grid-gap: 40px;
     padding: 0 10%;
 }
@@ -147,6 +146,7 @@ header {
     font-family: "Dongle-light";
     font-size: 1.6rem;
     transition: all ease 0.3s;
+    position: relative;
 }
 
 .destination-item:hover {
@@ -163,7 +163,6 @@ header {
 }
 
 .destination-item h3 {
-    text-decoration: none;
     color: #DAA520;
     transition: color 0.3s ease;
 }
@@ -181,7 +180,7 @@ header {
     padding-bottom: 20px;
 }
 
-.destination-item .package-price {
+.package-price {
     font-family: "Dongle-bold";
     font-size: 2rem;
     color: #333;
@@ -199,7 +198,7 @@ header {
     color: #fff;
 }
 
-.destination-item .view-details-btn {
+.view-details-btn {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -212,9 +211,10 @@ header {
     transition: all 0.3s ease;
 }
 
-.destination-item .view-details-btn:hover {
+.view-details-btn:hover {
     background-color: #ff7f50;
 }
+
 .book-button {
     display: inline-block;
     text-decoration: none;
@@ -226,13 +226,11 @@ header {
     font-size: 1.6rem;
     transition: all ease 0.3s;
 }
+
 .book-button:hover {
     background-color: #333;
-.book-button {
-        padding:8 px 20px;
-        font-size: 1.4rem;
-    }
 }
+
 .trek-title {
     font-size: calc(1.5rem + 1vw);
     font-weight: bold;
@@ -280,73 +278,6 @@ header {
 
 .gallery-item img:hover {
     transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-    .gallery-item {
-        width: 48%;
-    }
-    
-    .destination-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Auto-adjust columns */
-        padding: 0 5%;
-    }
-    
-    .home-content h1 {
-        font-size: calc(1.8rem + 4vw);
-    }
-    
-    .home-content p {
-        font-size: calc(1.4rem + 1vw);
-    }
-    
-    .home-button {
-        padding: 10px 25px;
-        font-size: 1.4rem;
-    }
-    
-    .destinations {
-        margin: 40px 20px;
-    }
-
-    .destination-item img {
-        height: 200px;
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-    }
-
-    .home-button {
-        font-size: 1.2rem;
-    }
-
-    .home-content h1 {
-        font-size: calc(2rem + 3vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.4rem + 1vw);
-    }
-    
-    .destination-item img {
-        height: 180px;
-    }
-    
-    .team-member img {
-        width: 100%;
-        height: auto;
-    }
-    
-    .about h3 {
-        font-size: 2.5rem;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-    }
 }
 
 .about {
@@ -457,13 +388,6 @@ footer p {
     font-size: 1.4rem;
 }
 
-@media (max-width: 768px) {
-    input,
-    textarea {
-        width: 100%;
-    }
-}
-
 html,
 body {
     height: 100%;
@@ -471,12 +395,81 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-}
-
-body {
     background-color: #f0f8ff;
     background-image: url('images/Back.jpeg');
     background-size: cover;
     background-position: center center;
     background-attachment: fixed;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .gallery-item {
+        width: 48%;
+    }
+
+    .destination-grid {
+        padding: 0 5%;
+    }
+
+    .home-content h1 {
+        font-size: calc(1.8rem + 4vw);
+    }
+
+    .home-content p {
+        font-size: calc(1.4rem + 1vw);
+    }
+
+    .home-button {
+        padding: 10px 25px;
+        font-size: 1.4rem;
+    }
+
+    .destinations {
+        margin: 40px 20px;
+    }
+
+    .destination-item img {
+        height: 200px;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery-item {
+        width: 100%;
+    }
+
+    .home-button {
+        font-size: 1.2rem;
+    }
+
+    .home-content h1 {
+        font-size: calc(2rem + 3vw);
+    }
+
+    .home-content p {
+        font-size: calc(1.4rem + 1vw);
+    }
+
+    .destination-item img {
+        height: 180px;
+    }
+
+    .team-member img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about h3 {
+        font-size: 2.5rem;
+    }
+
+    .about p {
+        font-size: 1.2rem;
+    }
 }
