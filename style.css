@@ -589,13 +589,79 @@ body {
     display: flex;
     flex-direction: column;
 }
-body {
-  font-family: Arial, sans-serif;
+
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  font-family: 'Dongle', sans-serif;
 }
 
+
+#booking {
+  padding: 40px 20px;
+  background: #f9f9f9;
+  min-height: 100vh;
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+
+.booking-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.booking-form label {
+  display: block;
+  font-size: 1.4rem;
+  margin: 15px 0 5px;
+  color: #333;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.booking-form textarea {
+  resize: vertical;
+}
+
+
+.submit-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
 
 .confirmation-modal {
   position: fixed;
@@ -610,7 +676,7 @@ body {
   z-index: 1000;
 }
 
-.confirmation-checkbox:checked ~ #confirmation-modal {
+#confirmation-checkbox:checked ~ .confirmation-modal {
   display: flex;
 }
 
@@ -637,6 +703,7 @@ body {
 }
 
 .ok-btn {
+  display: inline-block;
   padding: 10px 25px;
   border: none;
   border-radius: 8px;
@@ -652,45 +719,6 @@ body {
   transform: scale(1.05);
 }
 
-
-.booking-form {
-  margin: 30px auto;
-  max-width: 600px;
-}
-
-.booking-form label {
-  display: block;
-  margin-bottom: 10px;
-  font-size: 1.2rem;
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  font-size: 1rem;
-}
-
-.submit-btn {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  background-color: #007bff;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
-}
-
 footer {
   background-color: #333;
   color: white;
@@ -699,3 +727,5 @@ footer {
   font-size: 1.2rem;
   margin-top: 50px;
 }
+
+
