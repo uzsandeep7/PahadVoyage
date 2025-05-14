@@ -6,6 +6,74 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Book Your Trekking Package</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    .confirmation-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #confirmed-toggle:checked ~ .confirmation-modal {
+      display: flex;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 35px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      width: 90%;
+      max-width: 550px;
+    }
+
+    .modal-content h2 {
+      font-size: 2.4rem;
+      margin-bottom: 12px;
+      color: #333;
+    }
+
+    .modal-content p {
+      font-size: 1.6rem;
+      margin-bottom: 25px;
+      color: #666;
+    }
+
+    .cancel-btn,
+    .ok-btn {
+      padding: 10px 25px;
+      margin: 0 12px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .cancel-btn:hover,
+    .ok-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 25px 0;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-top: 50px;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -30,7 +98,7 @@
       <input type="checkbox" id="confirmed-toggle" hidden>
 
       <div class="booking-form">
-        <form id="booking-form" action="submit.html" method="POST">
+        <form id="booking-form" action="submit.html" method="POST" onsubmit="event.preventDefault(); document.getElementById('confirmed-toggle').checked = true;">
           <label for="name">Full Name</label>
           <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
@@ -59,17 +127,20 @@
           <label for="special-requests">Special Requests</label>
           <textarea id="special-requests" name="special_requests" rows="4" placeholder="Any special requests or questions?" required></textarea>
 
-          <label for="confirmed-toggle" class="ok-btn">Submit Booking</label>
+          <label for="confirmed-toggle" class="ok-btn" style="display: inline-block; text-align: center;">
+            Submit Booking
+          </label>
         </form>
       </div>
 
       <div class="confirmation-modal">
         <div class="modal-content">
-          <h2>Confirm Booking</h2>
-          <p>Are you sure you want to book this trek?</p>
+          <h2>Booking Confirmed!</h2>
+          <p>Your booking has been successfully confirmed.</p>
 
           <label for="confirmed-toggle" class="cancel-btn">Cancel</label>
-          <button type="submit" form="booking-form" class="ok-btn">Okay</button>
+
+          <label for="confirmed-toggle" class="ok-btn">Okay</label>
         </div>
       </div>
     </section>
