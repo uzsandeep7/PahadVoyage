@@ -641,7 +641,7 @@ body {
     outline: none;
 }
 
-.booking-form button {
+.booking-form .ok-btn {
     background-color: #007bff;
     color: white;
     padding: 16px 35px;
@@ -652,9 +652,10 @@ body {
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
     margin-top: 20px;
+    text-decoration: none;
 }
 
-.booking-form button:hover {
+.booking-form .ok-btn:hover {
     background-color: #0056b3;
     transform: scale(1.05);
 }
