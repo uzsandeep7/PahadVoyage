@@ -499,14 +499,64 @@ body {
     color: #000;
 }
 
+body {
+    font-family: 'Dongle', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    color: white;
+    text-align: center;
+}
+
+header .logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    display: inline;
+}
+
+.nav-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-menu ul li a:hover {
+    color: #007bff;
+}
+
 #booking {
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 750px;
     margin: 40px auto;
+}
+
+#booking h3 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 .booking-form {
@@ -518,7 +568,6 @@ body {
 .booking-form label {
     font-size: 1.3rem;
     font-weight: bold;
-    margin-bottom: 5px;
     color: #333;
 }
 
@@ -551,6 +600,7 @@ body {
     cursor: pointer;
     border: none;
     transition: background-color 0.3s ease, transform 0.3s ease;
+    align-self: center;
 }
 
 .booking-form button:hover {
@@ -583,7 +633,6 @@ body {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
     width: 90%;
     max-width: 550px;
-    font-family: 'Dongle', sans-serif;
 }
 
 .modal-content h2 {
