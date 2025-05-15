@@ -50,7 +50,12 @@ background-color: #f0f8ff;
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
     border-radius: 8px;
+
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
 }
+
 .nav-menu li {
     list-style: none;
 }
@@ -75,10 +80,11 @@ background-color: #f0f8ff;
 }
 @media (max-width: 768px) {
   .nav-menu ul {
-    display: flex;      
-    flex-direction: column; 
-    gap: 10px;
-    padding-left: 0;       
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 15px;
+    padding-left: 0;
+    margin: 0;
   }
 
   header {
@@ -86,6 +92,7 @@ background-color: #f0f8ff;
     align-items: flex-start;
   }
 }
+
 
 .home-image {
     position: relative;
