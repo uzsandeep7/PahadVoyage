@@ -22,7 +22,7 @@
 header {
     display: flex;
     padding: 20px;
-
+    
     align-items: center;
     justify-content: space-between;
     position: relative;
@@ -30,6 +30,7 @@ header {
 }
 
 body {
+background-color: #f0f8ff;
     background-image: url('images/back.jpeg');
     background-size: cover;
     background-position: center center;
