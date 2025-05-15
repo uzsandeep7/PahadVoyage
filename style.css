@@ -60,7 +60,9 @@ background-color: #f0f8ff;
     padding: 8px 12px;
     transition: background 0.3s, color 0.3s;
 }
-
+.nav-menu li {
+    list-style: none;
+}
 .nav-menu a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
