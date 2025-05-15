@@ -487,28 +487,13 @@ body {
     margin-bottom: 20px;
 }
 
-.contact p {
-    font-family: "Dongle-regular";
-    font-size: 1.6rem;
-    text-align: center;
-    margin: 5px 0;
-}
 
-.contact a {
-    color: #ff7f50;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-.contact-form {
+.form {
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+    
 }
 
 .contact-form input,
@@ -527,6 +512,9 @@ body {
 .contact-form textarea {
     height: 250px;
     resize: vertical;
+}
+textarea {
+    height: 250px;
 }
 
 .contact-form button {
@@ -547,8 +535,6 @@ body {
 .contact-form button:hover {
     background-color: #333;
 }
-
-/* Popup Styling */
 .popup {
     position: fixed;
     top: 0;
