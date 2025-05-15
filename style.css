@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 @font-face {
@@ -19,16 +20,6 @@
     src: url("Dongle/Dongle-Bold.ttf");
 }
 
-header {
-    display: flex;
-    padding: 20px;
-
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 10;
-}
-
 body {
     background-color: #f0f8ff;
     background-image: url('images/back.jpeg');
@@ -37,11 +28,21 @@ body {
     background-attachment: fixed;
     font-family: "Dongle-regular", sans-serif;
     height: 100%;
+    overflow-x: hidden;
 }
 
+header {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
 
 .logo img {
     max-width: 15%;
+    height: auto;
 }
 
 .nav-menu ul {
@@ -54,10 +55,6 @@ body {
 
 .nav-menu li {
     list-style: none;
-}
-
-.nav-menu li:last-child {
-    margin-right: 0;
 }
 
 .nav-menu a {
@@ -89,9 +86,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-   z-index: -1;
+    z-index: -1;
 }
-
 
 .home-content {
     position: absolute;
@@ -100,17 +96,17 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
+    padding: 20px;
 }
 
 .home-content h1 {
     font-family: "Dongle-bold";
-    font-size: 4vw;
+    font-size: clamp(2rem, 5vw, 4rem); 
 }
 
 .home-content p {
     font-family: "Dongle-regular";
-    font-size: 2vw;
-    margin-top: -20px;
+    font-size: clamp(1rem, 3vw, 2rem); 
     margin-bottom: 10px;
 }
 
@@ -129,6 +125,10 @@ body {
 .home-button:hover {
     background-color: #333;
 }
+
+@media (max-width: 768px) {
+    .logo img {
+        max-width:
 
 #packages h3 {
     font-family: "Dongle-Bold";
