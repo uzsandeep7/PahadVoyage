@@ -46,6 +46,7 @@ background-color: #f0f8ff;
 
 .nav-menu ul {
   display: flex;
+ background-color: rgba(0, 0, 0, 0.6);
   gap: 20px;
   list-style: none;
 }
