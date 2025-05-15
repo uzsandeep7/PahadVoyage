@@ -481,7 +481,7 @@ body {
 }
 .contact {
   padding: 80px 20px;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: transparent;
   max-width: 800px;
   margin: 40px auto;
   border-radius: 15px;
@@ -622,7 +622,7 @@ footer {
 }
 #booking {
   padding: 80px 20px;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: transparent;
   max-width: 800px;
   margin: 40px auto;
   border-radius: 15px;
