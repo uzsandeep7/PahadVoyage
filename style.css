@@ -51,6 +51,13 @@ background-color: #f0f8ff;
     padding: 10px 20px;
     border-radius: 8px;
 }
+.nav-menu li {
+    list-style: none;
+}
+
+.nav-menu li:last-child {
+    margin-right: 0;
+}
 
 .nav-menu a {
     text-decoration: none;
@@ -60,9 +67,7 @@ background-color: #f0f8ff;
     padding: 8px 12px;
     transition: background 0.3s, color 0.3s;
 }
-.nav-menu li {
-    list-style: none;
-}
+
 .nav-menu a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
