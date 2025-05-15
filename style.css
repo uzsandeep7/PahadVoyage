@@ -39,7 +39,6 @@ body {
     height: 100%;
 }
 
-
 .logo img {
     max-width: 15%;
 }
@@ -91,7 +90,6 @@ body {
     object-fit: cover;
    z-index: -1;
 }
-
 
 .home-content {
     position: absolute;
@@ -248,7 +246,6 @@ body {
     background-color: #ff7f50;
 }
 
-
 .book-button {
     background-color: #ff7f50;
     color: #fff;
@@ -257,6 +254,7 @@ body {
 .book-button:hover {
     background-color: #333;
 }
+
 .trek-title {
     font-size: 2rem;
     font-weight: bold;
@@ -328,39 +326,25 @@ body {
   background: #333;
 }
 
-@media (max-width: 768px) {
-  #package-details {
-    padding: 30px 5%;
-  }
-
-  #package-details h2, 
-  #package-details h3 {
-    font-size: 1.8rem;
-  }
-
-  .book-button {
-    font-size: 1.4rem;
-    padding: 10px 20px;
-  }
-}
-
 
 .gallery-item {
     display: inline-block;
     width: 30%;
-    margin: 10px;
+    margin: 10px 1.5%;
+    height: 250px;
+    overflow: hidden;
+    vertical-align: top;
     position: relative;
-    overflow: hidden;      
-    height: 250px;          
 }
 
 .gallery-item img {
     width: 100%;
-    height: 100%;           
+    height: 100%;
     object-fit: cover;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
+    display: block;
 }
 
 .gallery-item img:hover {
@@ -370,65 +354,24 @@ body {
 @media (max-width: 768px) {
     .gallery-item {
         width: 48%;
-        height: 180px;       
-    }
-}
-
-@media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-        height: 150px;       
-    }
-}
-
-
-    .destination-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        padding: 0 5%;
-    }
-
-    .home-content h1 {
-        font-size: calc(3rem + 2vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.6rem + 1vw);
-    }
-
-    .home-button {
-        padding: 10px 25px;
-        font-size: 1.4rem;
-    }
-
-    .destinations {
-        margin: 40px 20px;
-    }
-
-    .destination-item img {
         height: 200px;
+        margin: 10px 1%;
     }
 }
 
 @media (max-width: 480px) {
     .gallery-item {
         width: 100%;
-    }
-
-    .home-button {
-        font-size: 1.2rem;
-    }
-
-    .home-content h1 {
-        font-size: calc(2.5rem + 3vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.4rem + 1vw);
-    }
-
-    .destination-item img {
         height: 180px;
+        margin: 10px 0;
+    }
+}
 
+.destination-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 0 5%;
+    margin-top: 30px;
+}
 
  }
 
