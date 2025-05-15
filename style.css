@@ -21,17 +21,20 @@
 }
 
 body {
-    background-color: #f0f8ff;
-    background-image: url('images/back.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
     font-family: "Dongle-regular", sans-serif;
     height: 100%;
     overflow-x: hidden;
 }
 
-header {
+.home-page {
+    background-color: #f0f8ff;
+    background-image: url('images/back.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.home-page header {
     display: flex;
     padding: 20px;
     align-items: center;
@@ -40,12 +43,12 @@ header {
     z-index: 10;
 }
 
-.logo img {
+.home-page .logo img {
     max-width: 15%;
     height: auto;
 }
 
-.nav-menu ul {
+.home-page .nav-menu ul {
     display: flex;
     gap: 20px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -53,11 +56,11 @@ header {
     border-radius: 8px;
 }
 
-.nav-menu li {
+.home-page .nav-menu li {
     list-style: none;
 }
 
-.nav-menu a {
+.home-page .nav-menu a {
     text-decoration: none;
     font-family: "Dongle-bold";
     font-size: 1.6rem;
@@ -66,20 +69,20 @@ header {
     transition: background 0.3s, color 0.3s;
 }
 
-.nav-menu a:hover {
+.home-page .nav-menu a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
     color: #ff7f50;
 }
 
-.home-image {
+.home-page .home-image {
     position: relative;
     height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
-.home-image img {
+.home-page .home-image img {
     position: absolute;
     top: 0;
     left: 0;
@@ -89,7 +92,7 @@ header {
     z-index: -1;
 }
 
-.home-content {
+.home-page .home-content {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -99,18 +102,19 @@ header {
     padding: 20px;
 }
 
-.home-content h1 {
+.home-page .home-content h1 {
     font-family: "Dongle-bold";
-    font-size: clamp(2rem, 5vw, 4rem); 
+    font-size: clamp(2rem, 5vw, 4rem);
 }
 
-.home-content p {
+.home-page .home-content p {
     font-family: "Dongle-regular";
-    font-size: clamp(1rem, 3vw, 2rem); 
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin-top: -20px;
     margin-bottom: 10px;
 }
 
-.home-button {
+.home-page .home-button {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -122,13 +126,37 @@ header {
     transition: all ease 0.3s;
 }
 
-.home-button:hover {
+.home-page .home-button:hover {
     background-color: #333;
 }
 
 @media (max-width: 768px) {
-    .logo img {
-        max-width:
+    .home-page .logo img {
+        max-width: 25%;
+    }
+
+    .home-page .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .home-page .nav-menu li {
+        margin: 5px 0;
+    }
+
+    .home-page .home-content h1 {
+        font-size: clamp(1.5rem, 4vw, 3rem);
+    }
+
+    .home-page .home-content p {
+        font-size: clamp(0.9rem, 2.5vw, 1.8rem);
+    }
+
+    .home-page .home-button {
+        font-size: 1.4rem;
+        padding: 10px 20px;
+    }
 
 #packages h3 {
     font-family: "Dongle-Bold";
