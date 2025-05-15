@@ -1,78 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pahad Voyage Nepal - Contact Us</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body class="contact-us-page">
-    <header>
-      <div class="logo">
-        <a href="index.html"><img src="images/logo.jpg" alt="Pahad Voyage Nepal Logo" /></a>
-      </div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="packages.html">Packages</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="about-us.html">About Us</a></li>
-          <li><a href="contact-us.html">Contact Us</a></li> 
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
-      <section id="contact-us" class="contact">
-        <h3>Contact Us</h3>
-        <p>Email: <a href="mailto:info@pahadvoyagenepal.com">info@pahadvoyagenepal.com</a></p>
-        <p>Phone: <a href="tel:+977123456789">+977 123-456-789</a></p>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pahad Voyage Nepal - Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body class="contact-us-page">
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/logo.jpg" alt="Pahad Voyage Nepal Logo" /></a>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="packages.html">Packages</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="contact-us.html">Contact Us</a></li> 
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Form with GET method for redirection -->
-        <form action="contact-us.html" method="GET">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <input type="email" name="email" placeholder="Your Email" required />
-          <textarea name="message" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-        
-        <!-- Message Sent Confirmation Popup -->
-        <!-- Display only if query parameter status=success exists -->
-        <div class="popup-message" id="popup-message">
-          <p>Message Sent Successfully!</p>
-        </div>
-      </section>
-    </main>
-    
-    <footer>
-      <p>&copy; 2024 Pahad Voyage Nepal. All Rights Reserved.</p>
-    </footer>
+  <main>
+    <section id="contact-us" class="contact">
+      <h3>Contact Us</h3>
+      <p>Email: <a href="mailto:info@pahadvoyagenepal.com">info@pahadvoyagenepal.com</a></p>
+      <p>Phone: <a href="tel:+977123456789">+977 123-456-789</a></p>
 
-
-    <style>
-      .popup-message {
-        display: none;
-        background-color: #28a745;
-        color: #fff;
-        padding: 15px;
-        text-align: center;
-        font-size: 1.6rem;
-        border-radius: 5px;
-        margin-top: 20px;
-      }
-      
-     
-      body.success .popup-message {
-        display: block;
-      }
-    </style>
-    
   
-    <script>
-      if (window.location.search.includes('status=success')) {
-        document.body.classList.add('success');
-      }
-    </script>
-  </body>
+      <form action="#popup" method="GET" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+ 
+      <div id="popup" class="popup">
+        <div class="popup-content">
+          <p>Message Sent Successfully!</p>
+          <a href="booking-confirmed.html" class="btn-ok">OK</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Pahad Voyage Nepal. All Rights Reserved.</p>
+  </footer>
+</body>
 </html>
