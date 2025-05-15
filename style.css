@@ -28,9 +28,10 @@ header {
     position: relative;
     z-index: 10;
 }
-
+header, nav {
+  background: transparent;
+}
 body {
-    background-color: #f0f8ff;
     background-image: url('images/back.jpeg');
     background-size: cover;
     background-position: center center;
@@ -45,11 +46,9 @@ body {
 }
 
 .nav-menu ul {
-    display: flex;
-    gap: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
-    border-radius: 8px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
 .nav-menu li {
@@ -725,17 +724,6 @@ footer {
   background-color: #333;
 }
 
-
-@media (max-width: 768px) {
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 
   #booking h3 {
     font-size: 2.5rem;
