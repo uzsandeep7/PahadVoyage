@@ -46,12 +46,12 @@ body {
 
 .nav-menu ul {
     display: flex;
-    gap: 20px;
-       flex-direction: column; 
+ flex-direction: column; 
     gap: 10px;    
     background-color: rgba(0, 0, 0, 0.3);
     padding: 10px 20px;
     border-radius: 8px;
+    width: 200px;  
 }
 
 .nav-menu li {
@@ -63,7 +63,9 @@ body {
 }
 
 .nav-menu a {
-    text-decoration: none;
+     display: block;        
+    width: 100%;            
+    text-align: left;       
     font-family: "Dongle-bold";
     font-size: 1.6rem;
     color: #fff;
