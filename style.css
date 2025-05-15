@@ -1,482 +1,483 @@
 * {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
+margin: 0;
+padding: 0;
+scroll-behavior: smooth;
 }
 
 @font-face {
-    font-family: "Dongle-light";
-    src: url("Dongle/Dongle-Light.ttf");
+font-family: "Dongle-light";
+src: url("Dongle/Dongle-Light.ttf");
 }
 
 @font-face {
-    font-family: "Dongle-regular";
-    src: url("Dongle/Dongle-Regular.ttf");
+font-family: "Dongle-regular";
+src: url("Dongle/Dongle-Regular.ttf");
 }
 
 @font-face {
-    font-family: "Dongle-bold";
-    src: url("Dongle/Dongle-Bold.ttf");
+font-family: "Dongle-bold";
+src: url("Dongle/Dongle-Bold.ttf");
 }
 
 header {
-    display: flex;
-    padding: 20px;
+display: flex;
+padding: 20px;
 
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 10;
+align-items: center;
+justify-content: space-between;
+position: relative;
+z-index: 10;
 }
 
 body {
-    background-color: #f0f8ff;
-    background-image: url('images/back.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    font-family: "Dongle-regular", sans-serif;
-    height: 100%;
+background-color: #f0f8ff;
+background-image: url('images/back.jpeg');
+background-size: cover;
+background-position: center center;
+background-attachment: fixed;
+font-family: "Dongle-regular", sans-serif;
+height: 100%;
 }
 
 
 .logo img {
-    max-width: 15%;
+max-width: 15%;
 }
 
 .nav-menu ul {
-    display: flex;
-    gap: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
-    border-radius: 8px;
+display: flex;
+gap: 20px;
+background-color: rgba(0, 0, 0, 0.3);
+padding: 10px 20px;
+border-radius: 8px;
 }
 
 .nav-menu li {
-    list-style: none;
+list-style: none;
 }
 
 .nav-menu li:last-child {
-    margin-right: 0;
+margin-right: 0;
 }
 
 .nav-menu a {
-    text-decoration: none;
-    font-family: "Dongle-bold";
-    font-size: 1.6rem;
-    color: #fff;
-    padding: 8px 12px;
-    transition: background 0.3s, color 0.3s;
+text-decoration: none;
+font-family: "Dongle-bold";
+font-size: 1.6rem;
+color: #fff;
+padding: 8px 12px;
+transition: background 0.3s, color 0.3s;
 }
 
 .nav-menu a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 4px;
-    color: #ff7f50;
+background-color: rgba(255, 255, 255, 0.2);
+border-radius: 4px;
+color: #ff7f50;
 }
 
 .home-image {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    overflow: hidden;
+position: relative;
+height: 100vh;
+width: 100%;
+overflow: hidden;
 }
 
 .home-image img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-   z-index: -1;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+object-fit: cover;
+z-index: -1;
 }
 
 
 .home-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+color: #fff;
 }
 
 .home-content h1 {
-    font-family: "Dongle-bold";
-    font-size: 4vw;
+font-family: "Dongle-bold";
+font-size: 4vw;
 }
 
 .home-content p {
-    font-family: "Dongle-regular";
-    font-size: 2vw;
-    margin-top: -20px;
-    margin-bottom: 10px;
+font-family: "Dongle-regular";
+font-size: 2vw;
+margin-top: -20px;
+margin-bottom: 10px;
 }
 
 .home-button {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #ff7f50;
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-family: "Dongle-light";
-    font-size: 1.6rem;
-    transition: all ease 0.3s;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+background-color: #ff7f50;
+padding: 12px 30px;
+border-radius: 50px;
+font-family: "Dongle-light";
+font-size: 1.6rem;
+transition: all ease 0.3s;
 }
 
 .home-button:hover {
-    background-color: #333;
+background-color: #333;
 }
+
 #packages h3 {
-    font-family: "Dongle-Bold";
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 20px 0;
+font-family: "Dongle-Bold";
+font-size: 2.5rem;
+text-align: center;
+margin: 20px 0;
 }
 
 .destinations {
-    font-size: 2.5rem;
-    font-family: "Dongle-bold";
-    margin: 40px 80px;
-    text-align: center;
+font-size: 2.5rem;
+font-family: "Dongle-bold";
+margin: 40px 80px;
+text-align: center;
 }
 
 .destinations h2 {
-    margin-bottom: 40px;
-    text-align: center;
+margin-bottom: 40px;
+text-align: center;
 }
 
 .destination-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 40px;
-    padding: 0 5%;
-    margin-top: 30px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 40px;
+padding: 0 5%;
+margin-top: 30px;
 }
 
 @media (max-width: 768px) {
-    .destination-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+.destination-grid {
+grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media (max-width: 480px) {
-    .destination-grid {
-        grid-template-columns: 1fr;
-    }
+.destination-grid {
+grid-template-columns: 1fr;
+}
 }
 
 .destination-item {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: none;
-    padding: 12px 30px;
-    border-radius: 50px;
-    font-family: "Dongle-light";
-    font-size: 1.6rem;
-    transition: all ease 0.3s;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+background-color: none;
+padding: 12px 30px;
+border-radius: 50px;
+font-family: "Dongle-light";
+font-size: 1.6rem;
+transition: all ease 0.3s;
 }
 
 .destination-item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    background-color: #ff7f50;
+transform: translateY(-10px);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+background-color: #ff7f50;
 }
 
 .destination-item img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-bottom: 2px solid #f4f4f4;
+width: 100%;
+height: 250px;
+object-fit: cover;
+border-bottom: 2px solid #f4f4f4;
 }
 
 .destination-item h3 {
-    text-decoration: none;
-    color: #DAA520;
-    transition: color 0.3s ease;
+text-decoration: none;
+color: #DAA520;
+transition: color 0.3s ease;
 }
 
 .destination-item h3 a:hover {
-    color: #444;
+color: #444;
 }
 
 .destination-item p {
-    font-family: "Dongle-regular";
-    font-size: 1.6rem;
-    color: #666;
-    margin: 0 10px;
-    line-height: 1.4;
-    padding-bottom: 20px;
+font-family: "Dongle-regular";
+font-size: 1.6rem;
+color: #666;
+margin: 0 10px;
+line-height: 1.4;
+padding-bottom: 20px;
 }
 
 .destination-item .package-price {
-    font-family: "Dongle-bold";
-    font-size: 2.5rem;
-    color: #333;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px 20px;
-    border-radius: 25px;
+font-family: "Dongle-bold";
+font-size: 2.5rem;
+color: #333;
+position: absolute;
+bottom: 20px;
+left: 50%;
+transform: translateX(-50%);
+background-color: rgba(255, 255, 255, 0.8);
+padding: 10px 20px;
+border-radius: 25px;
 }
 
 .destination-item:hover .package-price {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: #fff;
+background-color: rgba(0, 0, 0, 0.6);
+color: #fff;
 }
 
 .destination-item .view-details-btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #333;
-    padding: 10px 20px;
-    border-radius: 25px;
-    font-family: "Dongle-light";
-    font-size: 1.4rem;
-    margin-top: 15px;
-    transition: all 0.3s ease;
+display: inline-block;
+text-decoration: none;
+color: #fff;
+background-color: #333;
+padding: 10px 20px;
+border-radius: 25px;
+font-family: "Dongle-light";
+font-size: 1.4rem;
+margin-top: 15px;
+transition: all 0.3s ease;
 }
 
 .destination-item .view-details-btn:hover {
-    background-color: #ff7f50;
+background-color: #ff7f50;
 }
 
 
 .book-button {
-    background-color: #ff7f50;
-    color: #fff;
+background-color: #ff7f50;
+color: #fff;
 }
 
 .book-button:hover {
-    background-color: #333;
+background-color: #333;
 }
 .trek-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 15px;
+font-size: 2rem;
+font-weight: bold;
+color: #333;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 15px;
 }
 
 .trek-package-img {
-    width: 100%;
-    max-width: 800px;
-    height: 500px;
-    object-fit: contain;
-    display: block;
-    margin: 20px auto;
+width: 100%;
+max-width: 800px;
+height: 500px;
+object-fit: contain;
+display: block;
+margin: 20px auto;
 }
 
 #package-details {
-  padding: 50px 8%;
-  background: transparent;
-  border-radius: 12px;
-  font-family: "Dongle", sans-serif;
-  color: #333;
-  max-width: 1000px;
-  margin: 40px auto;
+padding: 50px 8%;
+background: transparent;
+border-radius: 12px;
+font-family: "Dongle", sans-serif;
+color: #333;
+max-width: 1000px;
+margin: 40px auto;
 }
 
 #package-details h2, 
 #package-details h3 {
-  color: #2e4a62;
-  font-size: 2.2rem;
-  margin: 20px 0;
+color: #2e4a62;
+font-size: 2.2rem;
+margin: 20px 0;
 }
 
 #package-details p, 
 #package-details li {
-  font-size: 1.4rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
+font-size: 1.4rem;
+line-height: 1.5;
+margin-bottom: 10px;
 }
 
 #package-details ul {
-  padding-left: 20px;
+padding-left: 20px;
 }
 
 .trek-package-img {
-  width: 100%;
-  max-width: 800px;
-  border-radius: 8px;
-  margin: 30px auto;
-  display: block;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+width: 100%;
+max-width: 800px;
+border-radius: 8px;
+margin: 30px auto;
+display: block;
+box-shadow: 0 5px 15px rgba(0,0,0,0.1);
 }
 
 .book-button {
-  display: inline-block;
-  background: #ff7f50;
-  color: white;
-  padding: 12px 28px;
-  font-size: 1.6rem;
-  border-radius: 25px;
-  text-decoration: none;
-  transition: background 0.3s ease;
-  margin-top: 20px;
+display: inline-block;
+background: #ff7f50;
+color: white;
+padding: 12px 28px;
+font-size: 1.6rem;
+border-radius: 25px;
+text-decoration: none;
+transition: background 0.3s ease;
+margin-top: 20px;
 }
 
 .book-button:hover {
-  background: #333;
+background: #333;
 }
 
 @media (max-width: 768px) {
-  #package-details {
-    padding: 30px 5%;
-  }
+#package-details {
+padding: 30px 5%;
+}
 
-  #package-details h2, 
-  #package-details h3 {
-    font-size: 1.8rem;
-  }
+#package-details h2, 
+#package-details h3 {
+font-size: 1.8rem;
+}
 
-  .book-button {
-    font-size: 1.4rem;
-    padding: 10px 20px;
-  }
+.book-button {
+font-size: 1.4rem;
+padding: 10px 20px;
+}
 }
 
 
 #gallery {
-    padding: 0px;
-    text-align: center;
+padding: 0px;
+text-align: center;
 }
 
 #gallery h3 {
-    font-family: "Arial", sans-serif;
-    font-size: 3rem;
-    color: #333;
-    margin-bottom: 40px;
+font-family: "Arial", sans-serif;
+font-size: 3rem;
+color: #333;
+margin-bottom: 40px;
 }
 
 .gallery-item {
-    display: inline-block;
-    width: 30%;
-    margin: 10px;
-    position: relative;
+display: inline-block;
+width: 30%;
+margin: 10px;
+position: relative;
 }
 
 .gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+width: 100%;
+height: auto;
+border-radius: 8px;
+box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+transition: transform 0.3s ease;
 }
 
 .gallery-item img:hover {
-    transform: scale(1.05);
+transform: scale(1.05);
 }
 
 @media (max-width: 768px) {
-    .gallery-item {
-        width: 48%;
-    }
+.gallery-item {
+width: 48%;
+}
 
-    .destination-grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        padding: 0 5%;
-    }
+.destination-grid {
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+padding: 0 5%;
+}
 
-    .home-content h1 {
-        font-size: calc(3rem + 2vw);
-    }
+.home-content h1 {
+font-size: calc(3rem + 2vw);
+}
 
-    .home-content p {
-        font-size: calc(1.6rem + 1vw);
-    }
+.home-content p {
+font-size: calc(1.6rem + 1vw);
+}
 
-    .home-button {
-        padding: 10px 25px;
-        font-size: 1.4rem;
-    }
+.home-button {
+padding: 10px 25px;
+font-size: 1.4rem;
+}
 
-    .destinations {
-        margin: 40px 20px;
-    }
+.destinations {
+margin: 40px 20px;
+}
 
-    .destination-item img {
-        height: 200px;
-    }
+.destination-item img {
+height: 200px;
+}
 }
 
 @media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-    }
-
-    .home-button {
-        font-size: 1.2rem;
-    }
-
-    .home-content h1 {
-        font-size: calc(2.5rem + 3vw);
-    }
-
-    .home-content p {
-        font-size: calc(1.4rem + 1vw);
-    }
-
-    .destination-item img {
-        height: 180px;
-    
-
- }
-
-   .team-member img {
-        width: 100%;
-        height: auto;
-    }
-
-    .about h3 {
-        font-size: 3rem;
-    }
-
-    .about p {
-        font-size: 1.2rem;
-    }
+.gallery-item {
+width: 100%;
 }
 
-.about {
-    text-align: center;
-    padding: 100px;
+.home-button {
+font-size: 1.2rem;
 }
 
-.about h3 {
-    font-family: "Dongle-bold";
-    font-size: 3rem;
+.home-content h1 {
+font-size: calc(2.5rem + 3vw);
 }
 
-.about p {
-    font-family: "Dongle-regular";
-    font-size: 1.6rem;
-    line-height: 1;
-    margin-bottom: 40px;
+.home-content p {
+font-size: calc(1.4rem + 1vw);
 }
 
-.team-members {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.destination-item img {
+height: 180px;
+
+
 }
 
 .team-member img {
-    width: 300px;
-    height: 300px;
-    margin: 20px;
-    object-fit: cover;
+width: 100%;
+height: auto;
+}
+
+.about h3 {
+font-size: 3rem;
+}
+
+.about p {
+font-size: 1.2rem;
+}
+}
+
+.about {
+text-align: center;
+padding: 100px;
+}
+
+.about h3 {
+font-family: "Dongle-bold";
+font-size: 3rem;
+}
+
+.about p {
+font-family: "Dongle-regular";
+font-size: 1.6rem;
+line-height: 1;
+margin-bottom: 40px;
+}
+
+.team-members {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.team-member img {
+width: 300px;
+height: 300px;
+margin: 20px;
+object-fit: cover;
 }
 
 .team-member h4 {
-    font-family: "Dongle-bold";
-    font-size: 2rem;
+font-family: "Dongle-bold";
+font-size: 2rem;
 }
 .contact h2 {
   font-family: "Dongle-bold";
@@ -495,238 +496,238 @@ body {
   text-decoration: underline;
 }
 .contact h3 {
-    font-family: "Dongle-bold";
-    font-size: 3rem;
-    color: #000;
-    text-align: center;
-    margin-bottom: 20px;
+font-family: "Dongle-bold";
+font-size: 3rem;
+color: #000;
+text-align: center;
+margin-bottom: 20px;
 }
 
 
 .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
+width: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+
 }
 
 .contact-form input,
 .contact-form textarea {
-    width: 70%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-family: "Dongle-regular";
-    box-sizing: border-box;
+width: 70%;
+padding: 10px;
+margin: 10px 0;
+border: none;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+border-radius: 5px;
+font-size: 1.6rem;
+font-family: "Dongle-regular";
+box-sizing: border-box;
 }
 
 .contact-form textarea {
-    height: 250px;
-    resize: vertical;
+height: 250px;
+resize: vertical;
 }
 textarea {
-    height: 250px;
+height: 250px;
 }
 
 .contact-form button {
-    display: inline-block;
-    color: #fff;
-    background-color: #ff7f50;
-    padding: 16px 40px;
-    border-radius: 50px;
-    font-family: "Dongle-light";
-    font-size: 1.8rem;
-    border: none;
-    transition: all ease 0.3s;
-    margin-top: 20px;
-    cursor: pointer;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+display: inline-block;
+color: #fff;
+background-color: #ff7f50;
+padding: 16px 40px;
+border-radius: 50px;
+font-family: "Dongle-light";
+font-size: 1.8rem;
+border: none;
+transition: all ease 0.3s;
+margin-top: 20px;
+cursor: pointer;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form button:hover {
-    background-color: #333;
+background-color: #333;
 }
 .popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0, 0, 0, 0.5);
+display: none;
+justify-content: center;
+align-items: center;
+z-index: 1000;
 }
 
 :target.popup {
-    display: flex;
+display: flex;
 }
 
 .popup-content {
-    background: #fff;
-    padding: 30px 50px;
-    border-radius: 10px;
-    text-align: center;
-    font-family: "Dongle-regular";
-    font-size: 1.8rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+background: #fff;
+padding: 30px 50px;
+border-radius: 10px;
+text-align: center;
+font-family: "Dongle-regular";
+font-size: 1.8rem;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .popup-content p {
-    margin-bottom: 20px;
+margin-bottom: 20px;
 }
 
 .popup-content .btn-ok {
-    display: inline-block;
-    background-color: #ff7f50;
-    color: #fff;
-    padding: 12px 40px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-family: "Dongle-light";
-    font-size: 1.6rem;
-    transition: background-color 0.3s ease;
+display: inline-block;
+background-color: #ff7f50;
+color: #fff;
+padding: 12px 40px;
+border-radius: 50px;
+text-decoration: none;
+font-family: "Dongle-light";
+font-size: 1.6rem;
+transition: background-color 0.3s ease;
 }
 
 .popup-content .btn-ok:hover {
-    background-color: #333;
+background-color: #333;
 }
 
 @media (max-width: 768px) {
-    .contact-form input,
-    .contact-form textarea {
-        width: 100%;
-    }
+.contact-form input,
+.contact-form textarea {
+width: 100%;
+}
 }
 
 #booking {
-  padding: 40px 20px;
-  min-height: 100vh;
+padding: 40px 20px;
+min-height: 100vh;
 }
 
 h3 {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 30px;
-  color: #333;
+font-size: 2.5rem;
+text-align: center;
+margin-bottom: 30px;
+color: #333;
 }
 
 .booking-form {
-  max-width: 600px;
-  margin: 0 auto;
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+max-width: 600px;
+margin: 0 auto;
+background: white;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .booking-form label {
-  display: block;
-  font-size: 1.4rem;
-  margin: 15px 0 5px;
-  color: #333;
+display: block;
+font-size: 1.4rem;
+margin: 15px 0 5px;
+color: #333;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form textarea {
-  width: 100%;
-  padding: 12px;
-  font-size: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  margin-bottom: 10px;
+width: 100%;
+padding: 12px;
+font-size: 1rem;
+border: 1px solid #ccc;
+border-radius: 8px;
+margin-bottom: 10px;
 }
 
 .booking-form textarea {
-  resize: vertical;
+resize: vertical;
 }
 
 .submit-btn {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 12px 25px;
-  border: none;
-  border-radius: 8px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  text-align: center;
-  margin-top: 20px;
-  transition: background-color 0.2s ease, transform 0.2s ease;
+display: inline-block;
+background-color: #007bff;
+color: white;
+padding: 12px 25px;
+border: none;
+border-radius: 8px;
+font-size: 1.2rem;
+cursor: pointer;
+text-align: center;
+margin-top: 20px;
+transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .submit-btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+background-color: #0056b3;
+transform: scale(1.05);
 }
 
 .confirmation-modal {
-  display: none;
-  position: fixed;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+display: none;
+position: fixed;
+top: 0; left: 0;
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.7);
+justify-content: center;
+align-items: center;
+z-index: 1000;
 }
 
 #confirmation-modal:target {
-  display: flex;
+display: flex;
 }
 
 .modal-content {
-  background-color: #fff;
-  padding: 35px;
-  border-radius: 12px;
-  text-align: center;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
-  width: 90%;
-  max-width: 550px;
+background-color: #fff;
+padding: 35px;
+border-radius: 12px;
+text-align: center;
+box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+width: 90%;
+max-width: 550px;
 }
 
 .modal-content h2 {
-  font-size: 2.4rem;
-  margin-bottom: 12px;
-  color: #333;
+font-size: 2.4rem;
+margin-bottom: 12px;
+color: #333;
 }
 
 .modal-content p {
-  font-size: 1.6rem;
-  margin-bottom: 25px;
-  color: #666;
+font-size: 1.6rem;
+margin-bottom: 25px;
+color: #666;
 }
 
 .ok-btn {
-  display: inline-block;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 8px;
-  background-color: #007bff;
-  color: white;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: background-color 0.2s ease, transform 0.2s ease;
-  text-decoration: none;
+display: inline-block;
+padding: 10px 25px;
+border: none;
+border-radius: 8px;
+background-color: #007bff;
+color: white;
+font-size: 1.2rem;
+cursor: pointer;
+transition: background-color 0.2s ease, transform 0.2s ease;
+text-decoration: none;
 }
 
 .ok-btn:hover {
-  background-color: #0056b3;
-  transform: scale(1.05);
+background-color: #0056b3;
+transform: scale(1.05);
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  padding: 25px 0;
-  text-align: center;
-  font-size: 1.2rem;
-  margin-top: 50px;
+background-color: #333;
+color: white;
+padding: 25px 0;
+text-align: center;
+font-size: 1.2rem;
+margin-top: 50px;
 }
