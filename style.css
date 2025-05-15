@@ -481,92 +481,77 @@ body {
 }
 
 .contact h3 {
-    font-family: "Dongle-bold";
-    font-size: 3rem;
-    color: #000;
+  font-family: 'Dongle-Bold', sans-serif;
+  font-size: 3rem;
+  color: #000;
 }
 
 .form {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 input,
 textarea {
-    width: 70%;
-    padding: 10px;
-    margin: 10px 0;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    font-size: 1.6rem;
-    font-family: "Dongle-regular";
-    box-sizing: border-box;
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-family: 'Dongle-Regular', sans-serif;
+  box-sizing: border-box;
 }
 
 textarea {
-    height: 250px;
+  height: 250px;
 }
 
 .form button {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    background-color: #ff7f50;
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-family: "Dongle-light";
-    font-size: 1.6rem;
-    border: none;
-    transition: all ease 0.3s;
-    margin-top: 20px;
+  display: inline-block;
+  color: #fff;
+  background-color: #ff7f50;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-family: 'Dongle-Light', sans-serif;
+  font-size: 1.6rem;
+  border: none;
+  transition: all ease 0.3s;
+  margin-top: 20px;
+  cursor: pointer;
 }
 
 .form button:hover {
-    background-color: #333;
+  background-color: #333;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    align-items: center;
-    margin-top: auto;
-    text-align: center;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  margin-top: auto;
+  text-align: center;
 }
 
 footer p {
-    font-family: "Dongle-regular";
-    font-size: 1.4rem;
+  font-family: 'Dongle-Regular', sans-serif;
+  font-size: 1.4rem;
 }
+
 
 @media (max-width: 768px) {
-    input,
-    textarea {
-        width: 100%;
-    }
+  input,
+  textarea {
+    width: 100%;
+  }
 }
 
-html,
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  font-family: 'Dongle', sans-serif;
-}
 #booking {
   padding: 40px 20px;
   min-height: 100vh;
