@@ -479,104 +479,94 @@ body {
     font-family: "Dongle-bold";
     font-size: 2rem;
 }
-
-
-.contact-form {
-  max-width: 450px;
-  margin: 2rem auto;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.contact h3 {
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+    color: #000;
 }
 
-.contact-form input,
-.contact-form textarea,
-.contact-form button {
-  padding: 1rem 1.2rem;
-  font-size: 1.1rem;
-  border: 1.5px solid #ccc;
-  border-radius: 6px;
-  font-weight: 500;
-  transition: border-color 0.3s ease;
-  resize: vertical;
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #28a745;
-  outline: none;
+input,
+textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-family: "Dongle-regular";
+    box-sizing: border-box;
 }
 
-.contact-form textarea {
-  min-height: 120px;
-  font-family: inherit;
-  line-height: 1.4;
+textarea {
+    height: 250px;
 }
 
-.contact-form button {
-  background-color: #28a745;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: background-color 0.3s ease;
+.form button {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff7f50;  /* coral */
+    padding: 16px 40px;         /* bigger padding */
+    border-radius: 50px;
+    font-family: "Dongle-light";
+    font-size: 1.8rem;          /* bigger font */
+    border: none;
+    transition: all ease 0.3s;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.contact-form button:hover {
-  background-color: #218838;
+.form button:hover {
+    background-color: #333; /* dark on hover */
 }
 
-
-.popup {
-  position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.6);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-  padding: 1rem;
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    margin-top: auto;
+    text-align: center;
 }
 
-.popup:target {
-  display: flex;
+footer p {
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
 }
 
-.popup-content {
-  background: #fff;
-  padding: 2.5rem 3rem;
-  border-radius: 10px;
-  text-align: center;
-  max-width: 320px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+@media (max-width: 768px) {
+    input,
+    textarea {
+        width: 100%;
+    }
 }
 
-.popup-content p {
-  font-size: 1.4rem;
-  margin-bottom: 2rem;
-  font-weight: 600;
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
 }
 
-.btn-ok {
-  display: inline-block;
-  background: #28a745;
-  color: white;
-  text-decoration: none;
-  padding: 0.85rem 2rem;
-  border-radius: 8px;
-  font-weight: 700;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dongle', sans-serif;
 }
-
-.btn-ok:hover {
-  background: #218838;
-}
-
-
 
 #booking {
   padding: 40px 20px;
