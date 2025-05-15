@@ -567,8 +567,6 @@ body {
   padding: 0;
   font-family: 'Dongle', sans-serif;
 }
-
-
 #booking {
   padding: 40px 20px;
   min-height: 100vh;
@@ -631,7 +629,6 @@ h3 {
   transform: scale(1.05);
 }
 
-/* Modal hidden by default */
 .confirmation-modal {
   display: none;
   position: fixed;
@@ -644,7 +641,6 @@ h3 {
   z-index: 1000;
 }
 
-/* Show modal when targeted (after valid form submission) */
 #confirmation-modal:target {
   display: flex;
 }
