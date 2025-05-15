@@ -345,19 +345,28 @@ body {
 }
 
 
+#gallery {
+    padding: 0px;
+    text-align: center;
+}
+
+#gallery h3 {
+    font-family: "Arial", sans-serif;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
 .gallery-item {
     display: inline-block;
     width: 30%;
     margin: 10px;
     position: relative;
-    overflow: hidden;      
-    height: 250px;          
 }
 
 .gallery-item img {
     width: 100%;
-    height: 100%;           
-    object-fit: cover;
+    height: auto;
     border-radius: 8px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
@@ -370,17 +379,7 @@ body {
 @media (max-width: 768px) {
     .gallery-item {
         width: 48%;
-        height: 180px;       
     }
-}
-
-@media (max-width: 480px) {
-    .gallery-item {
-        width: 100%;
-        height: 150px;       
-    }
-}
-
 
     .destination-grid {
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -480,182 +479,128 @@ body {
     font-family: "Dongle-bold";
     font-size: 2rem;
 }
-.contact {
-  padding: 80px 20px;
-  background-color: transparent;
-  max-width: 800px;
-  margin: 40px auto;
-  border-radius: 15px;
-  box-shadow: none;
-  text-align: center;
-}
-
 .contact h3 {
-  font-size: 3rem;
-  margin-bottom: 20px;
-  color: #222;
+    font-family: "Dongle-bold";
+    font-size: 3rem;
+    color: #000;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.contact h2 {
-  font-size: 2rem;
-  margin: 10px 0;
-  color: #444;
-}
-
-.contact a {
-  color: #ff7f50;
-  text-decoration: none;
-}
-
-.contact-form {
-  margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
 }
 
 .contact-form input,
-.contact-form textarea {
-  padding: 15px;
-  font-size: 1.4rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-family: 'Dongle', sans-serif;
-  width: 100%;
+    height: 250px;
+    resize: vertical;
 }
-
-.contact-form textarea {
-  resize: vertical;
-  min-height: 100px;
+textarea {
+    height: 250px;
 }
 
 .contact-form button {
-  background-color: #ff7f50;
-  color: white;
-  padding: 12px;
-  font-size: 1.6rem;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    display: inline-block;
+.contact-form button:hover {
+    background-color: #333;
 }
 
-.contact-form button:hover {
-  background-color: #333;
-}
 
 .popup {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
 }
 
-.popup:target {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+:target.popup {
+    display: flex;
 }
 
 .popup-content {
-  background-color: #fff;
-  padding: 30px 40px;
-  border-radius: 15px;
-  text-align: center;
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+    text-align: center;
+    font-family: "Dongle-regular";
+    font-size: 1.8rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .popup-content p {
-  font-size: 2rem;
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
-.btn-ok {
-  background-color: #ff7f50;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px 25px;
-  font-size: 1.4rem;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
+.popup-content .btn-ok {
+    display: inline-block;
+    background-color: #ff7f50;
+    color: #fff;
+    padding: 12px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-family: "Dongle-light";
+    font-size: 1.6rem;
+    transition: background-color 0.3s ease;
 }
 
-.btn-ok:hover {
-  background-color: #333;
+.popup-content .btn-ok:hover {
+    background-color: #333;
 }
 
-footer {
-  margin-top: auto;
-  padding: 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  text-align: center;
-  font-size: 1.4rem;
-}
 @media (max-width: 768px) {
-  .contact h3 {
-    font-size: 2.5rem;
-  }
-
-  .contact h2 {
-    font-size: 1.8rem;
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 1.2rem;
-  }
-
-  .contact-form button {
-    font-size: 1.4rem;
-  }
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
 }
+
 #booking {
-  padding: 80px 20px;
-  background-color: transparent;
-  max-width: 800px;
-  margin: 40px auto;
-  border-radius: 15px;
-  box-shadow:none;
+  padding: 40px 20px;
+  min-height: 100vh;
 }
 
-#booking h3 {
-  font-size: 3rem;
+h3 {
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 30px;
+  color: #333;
 }
 
-.booking-form form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.booking-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
 }
 
 .booking-form label {
-  font-size: 1.6rem;
-  color: #444;
+  display: block;
+  font-size: 1.4rem;
+  margin: 15px 0 5px;
+  color: #333;
 }
 
 .booking-form input,
 .booking-form select,
 .booking-form textarea {
-  padding: 15px;
-  font-size: 1.4rem;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  font-family: 'Dongle', sans-serif;
   width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 .booking-form textarea {
@@ -663,96 +608,85 @@ footer {
 }
 
 .submit-btn {
-  background-color: #ff7f50;
+  display: inline-block;
+  background-color: #007bff;
   color: white;
-  padding: 12px;
-  font-size: 1.6rem;
+  padding: 12px 25px;
   border: none;
-  border-radius: 25px;
+  border-radius: 8px;
+  font-size: 1.2rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 20px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .submit-btn:hover {
-  background-color: #333;
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
-
 
 .confirmation-modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 0; left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-
-.confirmation-modal:target {
-  display: flex;
+  background-color: rgba(0, 0, 0, 0.7);
   justify-content: center;
   align-items: center;
+  z-index: 1000;
+}
+
+#confirmation-modal:target {
+  display: flex;
 }
 
 .modal-content {
-  background-color: white;
-  padding: 40px 50px;
-  border-radius: 15px;
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 12px;
   text-align: center;
-  max-width: 400px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  max-width: 550px;
 }
 
 .modal-content h2 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+  color: #333;
 }
 
 .modal-content p {
   font-size: 1.6rem;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #666;
 }
 
 .ok-btn {
-  background-color: #ff7f50;
-  color: white;
-  text-decoration: none;
+  display: inline-block;
   padding: 10px 25px;
-  font-size: 1.4rem;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+  text-decoration: none;
 }
 
 .ok-btn:hover {
-  background-color: #333;
+  background-color: #0056b3;
+  transform: scale(1.05);
 }
 
-
-@media (max-width: 768px) {
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  #booking h3 {
-    font-size: 2.5rem;
-  }
-
-  .booking-form label {
-    font-size: 1.4rem;
-  }
-
-  .booking-form input,
-  .booking-form select,
-  .booking-form textarea {
-    font-size: 1.2rem;
-  }
-
-  .submit-btn {
-    font-size: 1.4rem;
-  }
+footer {
+  background-color: #333;
+  color: white;
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 50px;
 }
