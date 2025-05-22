@@ -20,23 +20,11 @@
 }
 
 header {
-    display: flex;
     padding: 20px;
-
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
     align-items: center;
-    justify-content: space-between;
-    position: relative;
-    z-index: 10;
-}
 
-body {
-    background-color: #f0f8ff;
-    background-image: url('images/back.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    font-family: "Dongle-regular", sans-serif;
-    height: 100%;
 }
 
 .logo img {
@@ -45,14 +33,11 @@ body {
 
 .nav-menu ul {
     display: flex;
-    gap: 20px;
-    background-color: rgba(0, 0, 0, 0.3);
-    padding: 10px 20px;
-    border-radius: 8px;
 }
 
 .nav-menu li {
     list-style: none;
+   margin-right: 20px;
 }
 
 .nav-menu li:last-child {
@@ -64,7 +49,6 @@ body {
     font-family: "Dongle-bold";
     font-size: 1.6rem;
     color: #fff;
-    padding: 8px 12px;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -73,11 +57,9 @@ body {
     border-radius: 4px;
     color: #ff7f50;
 }
-
-.home-image {
+.home{
     position: relative;
-    height: 100vh;
-    width: 100%;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -102,12 +84,12 @@ body {
 
 .home-content h1 {
     font-family: "Dongle-bold";
-    font-size: 4vw;
+    font-size: 4rem;
 }
 
 .home-content p {
     font-family: "Dongle-regular";
-    font-size: 2vw;
+    font-size: 1.8rem;
     margin-top: -20px;
     margin-bottom: 10px;
 }
@@ -129,56 +111,49 @@ body {
 }
 
 
-@media (max-width: 600px) {
-    .home-content {
-        position: static;
-        transform: none;
-        padding: 20px;
-        max-width: 90vw;
-        margin: 40px auto;
-        text-align: center;
-    }
-
+@media (max-width: 1177px) {
     .home-content h1 {
-        font-size: 6vw;
-        line-height: 1.2;
+        line-height: 0.7;
     }
-
     .home-content p {
-        font-size: 4vw;
-        margin-top: 10px;
-        margin-bottom: 20px;
-    }
-
-    .home-button {
-        font-size: 4vw;
-        padding: 12px 25px;
-    }
-
-    .logo img {
-        max-width: 35%;
-    }
-
-    header {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .nav-menu ul {
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
-        width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
-        border-radius: 8px;
-    }
-
-    .nav-menu a {
-        font-size: 4vw;
-        padding: 10px;
+        margin-top: 0;
+        line-height: 0.8;
     }
 }
 
+@media (max-width: 603px) {
+    .home-content h1 {
+        font-size: 2rem;
+    }
+    .home-content p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 430px) {
+    .home-content h1 {
+        font-size: 1.3rem;
+    }
+    .home-content p {
+        font-size: 1rem;
+    }
+    .home-button {
+        padding: 6px 22px;
+        font-size: 16px;
+    }
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+footer p{
+    font-family: "Dongle-regular";
+    font-size: 1.4rem;
+}
 #packages h3 {
     font-family: "Dongle-Bold";
     font-size: 2.5rem;
