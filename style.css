@@ -543,6 +543,7 @@ object-fit: cover;
 }
 
 .btn-ok {
+    display: inline-block;
   background-color: #ff7f50;
   color: #fff;
   text-decoration: none;
