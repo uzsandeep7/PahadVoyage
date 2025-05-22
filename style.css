@@ -531,7 +531,7 @@ object-fit: cover;
 }
 
 .popup-content {
-  background-color: #fff;
+  background-color: white;
   padding: 30px 40px;
   border-radius: 15px;
   text-align: center;
@@ -543,9 +543,9 @@ object-fit: cover;
 }
 
 .btn-ok {
-    display: inline-block;
+    
   background-color: #ff7f50;
-  color: #fff;
+  color: white;
   text-decoration: none;
   padding: 10px 25px;
   font-size: 1.4rem;
