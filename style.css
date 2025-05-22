@@ -30,7 +30,8 @@ background-color: transparent;
 }
 
 .logo img {
-    max-width: 15%;
+  max-width: 150px;
+  height: auto;
 }
 
 .nav-menu ul {
@@ -371,6 +372,12 @@ object-fit: cover;
         height: 200px;
     }
 }
+@media (max-width: 600px) {
+  .logo img {
+    max-width: 100px;
+  }
+}
+
 
 @media (max-width: 480px) {
     .gallery-item {
