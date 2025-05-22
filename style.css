@@ -69,11 +69,13 @@ background-color: transparent;
 
 .home-image img {
     position: absolute;
-    size: cover;
-    attachment: fixed;
-    z-index: -1;
-    height:100%
+    top:0;
+    left:0;
+     height:100%
     width:100%
+    object-fit:cover;    
+    z-index: -1;
+   
 }
 
 .home-content {
@@ -88,6 +90,7 @@ background-color: transparent;
 .home-content h1 {
     font-family: "Dongle-bold";
      font-size: 3rem; 
+     color: #fdf6f0;
     
 }
 
@@ -96,6 +99,7 @@ background-color: transparent;
     font-size: 1.8rem;
     margin-top: -20px;
     margin-bottom: 10px;
+     color: #fdf6f0;
     
     
 }
@@ -349,10 +353,12 @@ object-fit: cover;
 
     .home-content h1 {
         font-size: 2rem;
+         color: #fdf6f0;
     }
 
     .home-content p {
        font-size: 1.2rem;
+         color: #fdf6f0;
     }
 
     .home-button {
@@ -380,10 +386,12 @@ object-fit: cover;
 
        .home-content h1 {
        font-size: 1.6rem;
+         color: #fdf6f0;
     }
 
     .home-content p {
         font-size: 1rem;
+         color: #fdf6f0;
     }
 
     .destination-item img {
@@ -568,13 +576,15 @@ body {
     display: flex;
     flex-direction: column;
 }
-
-body {
-    background-color: #f0f8ff;
-    background-image: url('images/back.jpeg');
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+body:not(.home)::before {
+    content: "";
+    background: url('images/back.jpeg') no-repeat center center/cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
 }
 
 #booking {
