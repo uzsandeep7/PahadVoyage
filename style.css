@@ -83,20 +83,22 @@ background-color: transparent;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #f8f9fa;;
+    color: #fff;
+}
+
+.home-content h1 {
+    font-family: "Dongle-bold";
+     font-size: calc(2rem + 4vw); 
     
 }
 
-.hero-content h1{
-    font-family: "Dongle-bold";
-    font-size: calc(2rem + 4vw);;
-}
-.hero-content p{
+.home-content p {
     font-family: "Dongle-regular";
     font-size: calc(1.2rem + 1vw);
     margin-top: -20px;
     margin-bottom: 10px;
-
+    
+    
 }
 
 .home-button {
@@ -347,8 +349,11 @@ object-fit: cover;
     }
 
     .home-content h1 {
-        margin-bottom: 5px;
-    
+        font-size: 3rem;
+    }
+
+    .home-content p {
+       font-size: 1.8rem;
     }
 
     .home-button {
@@ -375,11 +380,11 @@ object-fit: cover;
     }
 
     .home-content h1 {
-       font-size: 1.3rem;
+       font-size: 3rem;
     }
 
     .home-content p {
-        font-size: 1rem;
+        font-size: 1.8rem;
     }
 
     .destination-item img {
