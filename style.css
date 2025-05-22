@@ -39,7 +39,6 @@ body {
     height: 100%;
 }
 
-
 .logo img {
     max-width: 15%;
 }
@@ -89,9 +88,8 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-   z-index: -1;
+    z-index: -1;
 }
-
 
 .home-content {
     position: absolute;
@@ -128,6 +126,57 @@ body {
 
 .home-button:hover {
     background-color: #333;
+}
+
+
+@media (max-width: 600px) {
+    .home-content {
+        position: static;
+        transform: none;
+        padding: 20px;
+        max-width: 90vw;
+        margin: 40px auto;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 6vw;
+        line-height: 1.2;
+    }
+
+    .home-content p {
+        font-size: 4vw;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    .home-button {
+        font-size: 4vw;
+        padding: 12px 25px;
+    }
+
+    .logo img {
+        max-width: 35%;
+    }
+
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        border-radius: 8px;
+    }
+
+    .nav-menu a {
+        font-size: 4vw;
+        padding: 10px;
+    }
 }
 
 #packages h3 {
