@@ -584,16 +584,7 @@ body {
     display: flex;
     flex-direction: column;
 }
-body:not(.home)::before {
-    content: "";
-    background: url('images/back.jpeg') no-repeat center center/cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
+
 
 #booking {
   padding: 80px 20px;
