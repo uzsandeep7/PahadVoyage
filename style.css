@@ -29,6 +29,7 @@ background-color: transparent;
     z-index: 10;
 }
 
+
 .logo img {
     max-width: 15%;
 }
@@ -542,35 +543,6 @@ object-fit: cover;
   background-color: #333;
 }
 
-@media (max-width: 768px) {
-  .contact h3 {
-    font-size: 2.5rem;
-  }
-}
-  .contact h2 {
-    font-size: 1.8rem;
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 1.2rem;
-  }
-
-  .contact-form button {
-    font-size: 1.4rem;
-  }
-
-
 footer {
     background-color: #333;
     color: #fff;
@@ -585,13 +557,6 @@ footer {
 footer p {
     font-family: "Dongle-regular";
     font-size: 1.4rem;
-}
-
-@media (max-width: 768px) {
-    input,
-    textarea {
-        width: 100%;
-    }
 }
 
 html,
