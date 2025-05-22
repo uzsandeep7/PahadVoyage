@@ -88,13 +88,13 @@ background-color: transparent;
 
 .home-content h1 {
     font-family: "Dongle-bold";
-     font-size: calc(2rem + 4vw); 
+     font-size: 3rem; 
     
 }
 
 .home-content p {
     font-family: "Dongle-regular";
-    font-size: calc(1.2rem + 1vw);
+    font-size: 1.8rem;
     margin-top: -20px;
     margin-bottom: 10px;
     
@@ -349,11 +349,11 @@ object-fit: cover;
     }
 
     .home-content h1 {
-        font-size: calc(1.8rem + 4vw);
+        font-size: 2rem;
     }
 
     .home-content p {
-       font-size: calc(1.4rem + 1vw);
+       font-size: 1.2rem;
     }
 
     .home-button {
@@ -380,11 +380,11 @@ object-fit: cover;
     }
 
        .home-content h1 {
-       font-size: calc(2rem + 3vw);
+       font-size: 1.6rem;
     }
 
     .home-content p {
-        font-size: calc(1.4rem + 1vw);
+        font-size: 1rem;
     }
 
     .destination-item img {
