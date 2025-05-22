@@ -22,9 +22,9 @@
 header{
     display: flex;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+justify-content: space-between;
     align-items: center;
+     z-index: 10;
 }
 
 .logo img {
@@ -33,6 +33,10 @@ header{
 
 .nav-menu ul {
     display: flex;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
 .nav-menu li {
@@ -49,7 +53,8 @@ header{
     font-family: "Dongle-bold";
     font-size: 1.6rem;
     color: #fff;
-    transition: all ease 0.3s;
+    padding: 8px 12px;
+    transition: background 0.3s, color 0.3s;
 }
 
 .nav-menu a:hover {
