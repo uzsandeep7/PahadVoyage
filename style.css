@@ -19,12 +19,12 @@
     src: url("Dongle/Dongle-Bold.ttf");
 }
 
-header {
+header{
+    display: flex;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0,0,0, 0.1);
     align-items: center;
-
 }
 
 .logo img {
@@ -49,7 +49,7 @@ header {
     font-family: "Dongle-bold";
     font-size: 1.6rem;
     color: #fff;
-    transition: background 0.3s, color 0.3s;
+    transition: all ease 0.3s;
 }
 
 .nav-menu a:hover {
