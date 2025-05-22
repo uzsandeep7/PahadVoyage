@@ -538,15 +538,20 @@ object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 0 10px #000;
 }
-
 .btn-ok {
   display: inline-block;
-  margin-top: 10px;
-  background-color: #28a745;
-  color: white;
+  margin-top: 15px;
   padding: 10px 20px;
+  background-color: #007BFF; 
+  color: #fff;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ok:hover {
+  background-color: #0056b3;
 }
 
 .popup-content p {
