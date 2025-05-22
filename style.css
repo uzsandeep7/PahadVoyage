@@ -83,16 +83,17 @@ background-color: transparent;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fff;
+    color: #f8f9fa;;
+    
 }
 
 .hero-content h1{
     font-family: "Dongle-bold";
-    font-size: 4rem;
+    font-size: calc(2rem + 4vw);;
 }
 .hero-content p{
     font-family: "Dongle-regular";
-    font-size: 1.8rem;
+    font-size: calc(1.2rem + 1vw);
     margin-top: -20px;
     margin-bottom: 10px;
 
